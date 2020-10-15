@@ -455,6 +455,11 @@ input[type='checkbox']:checked .checkmark {
   height: auto;
 }
 
+html, body, .container-fluid {
+  width: 100%;
+  min-width: 1024px !important;
+}
+
 body {
   background: #404046;
   font-family: "Helvetica" !important;
@@ -779,7 +784,6 @@ button {
 
 .tab-content.dark {
   background: #404046;
-  height: calc(100% - 31px);
   border-radius: 0 18px 18px 18px;
 }
 
@@ -1531,7 +1535,7 @@ dl.no-border > div {
 }
 
 .custom-scroll.fixed-scroll, .tab-content > .fixed-scroll.full-height {
-  max-height: 70vh;
+  max-height: 73vh;
   min-height: -webkit-fill-available;
   overflow: auto;
 }
@@ -2066,7 +2070,8 @@ dl.no-border > div {
   margin: 8px;
 }
 
-#brochures a, #brochures a:hover {
+#brochures a,
+#brochures a:hover {
   color: #fff;
   text-decoration: none;
 }
@@ -5077,6 +5082,26 @@ header .buttons {
 }
 
 .payment-options.actions .dropdown-menu-center {
-  left: 60% !important;
+  left: 39% !important;
+}
+
+svg g.highcharts-axis-labels.highcharts-yaxis-labels text:nth-of-type(1) {
+  fill: #E02020 !important;
+}
+
+svg g.highcharts-axis-labels.highcharts-yaxis-labels text:nth-of-type(2) {
+  fill: #FA6400 !important;
+}
+
+svg g.highcharts-axis-labels.highcharts-yaxis-labels text:nth-of-type(3) {
+  fill: #F7B500 !important;
+}
+
+svg g.highcharts-axis-labels.highcharts-yaxis-labels text:nth-of-type(4) {
+  fill: #9AFF2F !important;
+}
+
+svg g.highcharts-axis-labels.highcharts-yaxis-labels text:nth-of-type(5) {
+  fill: #478A00 !important;
 }
 /*# sourceMappingURL=style.css.map */

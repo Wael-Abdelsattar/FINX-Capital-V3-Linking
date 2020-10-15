@@ -1,5 +1,7 @@
 /* new tab */
-
+:root {
+  --GreyColor: #e8e8e8;
+}
 .heading {
   background: #d5dcf8;
   border: 1px solid #2b50ed;
@@ -650,8 +652,10 @@ li.dropdown-header.optgroup-1 {
   border-left: 0px !important;
 }
 
-.value-color {
-  background: #e8e8e8;
+.value-color, 
+input[type=text]:disabled,
+input.form-control[type=text][disabled] {
+  background: var(--GreyColor);
 }
 
 .btn-requst {

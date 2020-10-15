@@ -23,7 +23,7 @@
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Menu / CS</title>
+    <title>Profile/SA,DO</title>
 <meta data-react-helmet="true" name="apple-mobile-web-app-capable" content="yes">
     <meta data-react-helmet="true" name="apple-mobile-web-app-status-bar-style" content="#68CDF0">
     <meta data-react-helmet="true" name="apple-mobile-web-app-title" content="FINX">
@@ -49,29 +49,77 @@
     <div class="global-wrapper profile-page">
       <header>
         <div class="container-fluid">
-          <a href="#" class="logo open-sidemenu">
+          <a href="./CS_menu.html" class="logo">
             <img src="assets/images/logo.svg" />
           </a>
         </div>
       </header>
-      <div class="sidemenu">
-        <img src="assets/images/logo.svg" alt="">
-        <button type="button" class="btn btn-icon close-menu">
-          <img src="assets/images/close-red.svg" alt="">
-        </button>
-        <nav>
-          <ul>
-            <li>
-              <a href="#" class="active">Home</a>
-            </li>
-            <li>
-              <a href="./Overview.html">Overview</a>
-            </li>
-            <li>
-              <a href="./profile.html">Profile</a>
-            </li>
-          </ul>
-        </nav>
+
+      <div class="profile">
+        <div
+          class="section-title d-flex align-items-center mt-4"
+        >
+          <h2 class="title">Profile</h2>
+        </div>
+
+        <div class="user-img">
+          <figure>
+            <img src="assets/images/user-placeholder.png" alt="">
+          </figure>
+          <button type="button" class="btn btn-icon bg-danger">
+            <i class="icon-pen"></i>
+          </button>
+        </div>
+        <div class="user-info">
+          <div class="grid-blocks two">
+            <div>
+              <h5 class="big-text m-0 mb-1">First Name</h5>
+              <h6 class="medium-text m-0">Bill</h6>
+            </div>
+            <div>
+              <h5 class="big-text m-0 mb-1">Last Name</h5>
+              <h6 class="medium-text m-0">Smith</h6>
+            </div>
+            <div class="m-t-2">
+              <h5 class="big-text m-0 mb-1">User Name</h5>
+              <h6 class="medium-text m-0">BillS0123</h6>
+            </div>
+            <div class="m-t-2">
+              <h5 class="big-text m-0 mb-1">Email Address</h5>
+              <h6 class="medium-text m-0">BillS0123@gmail.com</h6>
+            </div>
+            <div class="m-t-2">
+              <h5 class="big-text m-0 mb-1">Dealership</h5>
+              <h6 class="medium-text m-0">King Honda</h6>
+            </div>
+            <div class="m-t-2">
+              <h5 class="big-text m-0 mb-1">Phone</h5>
+              <h6 class="medium-text m-0">(778) 123-4567</h6>
+            </div>
+            <div>
+              <div class="field">
+                <label class="big-text">New Password</label>
+                <div class="show-password">
+                  <input type="password" class="form-control">
+                  <i class="icon-eye"></i>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="field">
+                <label class="big-text">Confirm Password</label>
+                <div class="show-password">
+                  <input type="password" class="form-control">
+                  <i class="icon-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-right m-t-6">
+            <button type="button" class="btn btn-danger">Cancel</button>
+            <button type="button" class="btn btn-primary ml-2">Save</button>
+          </div>
+        </div>
       </div>
 
     <!-- javascript -->
