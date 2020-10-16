@@ -710,11 +710,12 @@ input.form-control[type=text][disabled] {
   width: 180px !important;
 }
 
-.Score input {
+.score input {
   height: 25px;
   width: 90px;
   padding: 0 0.4em;
   border: 1px solid #f04e31 !important;
+  margin-top: 3px;
 }
 
 ::-webkit-input-placeholder {
@@ -773,7 +774,7 @@ input.form-control[type=text][disabled] {
     padding-left: 0px !important;
   }
 
-  .Score input {
+  .score input {
     width: 62px;
   }
 

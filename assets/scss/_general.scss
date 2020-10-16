@@ -1156,6 +1156,7 @@ dl {
     padding: 15px;
     transform: translateX(-100%);
     transition: 0.5s;
+    z-index: 9999;
     .close-menu {
         position: absolute;
         right: 15px;

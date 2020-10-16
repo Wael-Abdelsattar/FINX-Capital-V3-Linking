@@ -103,6 +103,7 @@
                 <div class="spacer"></div>
                 <button type="button" class="btn btn-danger mb-1">Cancel</button>
                 <button type="button" class="btn btn-primary ml-1 mb-1">Save</button>
+                <!-- <button type="button" class="btn btn-primary ml-1 mb-1" onClick="toggleFullScreen();">Full Screen</button> -->
             </div>
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="application" role="tabpanel" aria-labelledby="application-tab">
@@ -143,13 +144,13 @@
                                             </select>
                                         </div>
 
-                                        <div class="text-black mx-4">
+                                        <div class="text-black mx-4 mt-1">
                                             <div class="custom-control custom-checkbox color-red">
                                                 <input type="checkbox" class="custom-control-input" id="customCheck81" name="example1">
                                                 <label class="custom-control-label" for="customCheck81">Show Credit Bureau Score</label>
                                             </div>
                                         </div>
-                                        <div class="dropdown Score">
+                                        <div class="score">
                                             <input type="text" class="form-control" placeholder="Enter Score">
                                         </div>
                                 
@@ -177,7 +178,7 @@
                                                             <i class="fa fa-car"></i>
                                                         </div>
                                                         <div class="col-6 pl-0 ">
-                                                            <select class=" form-control one " required>
+                                                            <select tabindex="1" class="form-control one" required>
                                                                 <option value="" selected> Please Select</option>
                                                                 <option>1</option>
                                                                 <option>1</option>
@@ -194,7 +195,7 @@
                                                             <span>Suffix:</span>
                                                         </div>
                                                         <div class="col-6 pl-0 ">
-                                                            <select class="form-control one" required>
+                                                            <select tabindex="5" class="form-control one" required>
                                                                 <option value="" selected>Please Select</option>
                                                                 <option>1</option>
                                                                 <option>1</option>
@@ -211,7 +212,7 @@
                                                             <span> Gender:</span>
                                                         </div>
                                                         <div class="col-6 pl-0 ">
-                                                            <select class="form-control one" required>
+                                                            <select tabindex="9" class="form-control one" required>
                                                                 <option value="" selected>Please Select</option>
                                                                 <option>1</option>
                                                                 <option>1</option>
@@ -231,7 +232,7 @@
                                                             <span>First Name: </span>
                                                         </div>
                                                         <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
+                                                            <input type="text" tabindex="2" class="form-control" />
                                                         </div>
                                                     </div>
                                                 </td>
@@ -242,7 +243,7 @@
                                                         </div>
                                                         <div class="col-6 pl-0">
                                                             <div class="datepicker-control">
-                                                                <input type="text" placeholder="MM/DD/YYYY" readonly class="form-control datepicker" />
+                                                                <input type="text" tabindex="6" placeholder="MM/DD/YYYY" readonly class="form-control datepicker" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -254,7 +255,7 @@
                                                             <span> Marital Status:</span>
                                                         </div>
                                                         <div class="col-6 pl-0 ">
-                                                            <select class="form-control one" required>
+                                                            <select tabindex="10" class="form-control one" required>
                                                                 <option value="" selected>Please Select</option>
                                                                 <option>1</option>
                                                                 <option>1</option>
@@ -275,7 +276,7 @@
                                                             <span>Middle Name:</span>
                                                         </div>
                                                         <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
+                                                            <input type="text" tabindex="3" class="form-control" />
                                                         </div>
                                                     </div>
                                                 </td>
@@ -285,7 +286,7 @@
                                                             <span> SIN:</span>
                                                         </div>
                                                         <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
+                                                            <input type="text" tabindex="7" class="form-control" />
                                                         </div>
                                                     </div>
                                                 </td>
@@ -295,7 +296,7 @@
                                                             <span> Email:</span>
                                                         </div>
                                                         <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
+                                                            <input type="text" tabindex="11" class="form-control" />
                                                         </div>
                                                     </div>
                                                 </td>
@@ -309,7 +310,7 @@
                                                             <span>Last Name: <i class="icon-search"></i></span>
                                                         </div>
                                                         <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
+                                                            <input type="text" tabindex="4" class="form-control" />
                                                         </div>
                                                     </div>
                                                 </td>
@@ -319,7 +320,7 @@
                                                             <span> Phone:</span>
                                                         </div>
                                                         <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
+                                                            <input type="text" tabindex="8" class="form-control" />
                                                         </div>
                                                     </div>
                                                 </td>
@@ -329,7 +330,7 @@
                                                             <span> Cell Phone:</span>
                                                         </div>
                                                         <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
+                                                            <input type="text" tabindex="12" class="form-control" />
                                                         </div>
                                                     </div>
                                                 </td>
@@ -354,7 +355,7 @@
                                                             <span>Suite No/P.O box#:</span>
                                                         </div>
                                                         <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
+                                                            <input type="text" tabindex="" class="form-control" />
                                                         </div>
                                                     </div>
                                                 </td>
@@ -366,7 +367,7 @@
                                                             <i class="fa fa-car"></i>
                                                         </div>
                                                         <div class="col-6 pl-0 ">
-                                                            <select class="form-control one" required>
+                                                            <select tabindex="" class="form-control one" required>
                                                                 <option value="" selected>Please Select</option>
                                                                 <option>1</option>
                                                                 <option>1</option>
@@ -384,7 +385,7 @@
                                                             <span>Postal Code:</span>
                                                         </div>
                                                         <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
+                                                            <input type="text" tabindex="" class="form-control" />
                                                         </div>
                                                     </div>
                                                 </td>
@@ -397,7 +398,7 @@
                                                             <span>Address: </span>
                                                         </div>
                                                         <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
+                                                            <input type="text" tabindex="" class="form-control" />
                                                         </div>
                                                     </div>
                                                 </td>
@@ -409,7 +410,7 @@
                                                             <span> City:</span>
                                                         </div>
                                                         <div class="col-6 pl-0 ">
-                                                            <select class="form-control one" required>
+                                                            <select tabindex="" class="form-control one" required>
                                                                 <option value="" selected>Please Select</option>
                                                                 <option>1</option>
                                                                 <option>1</option>
@@ -427,7 +428,7 @@
                                                         </div>
                                                         <div class="col-6 pl-0">
                                                             <div class="datepicker-control">
-                                                                <input type="text" placeholder="MM/DD/YYYY" readonly class="form-control datepicker" />
+                                                                <input type="text" tabindex="" placeholder="MM/DD/YYYY" readonly class="form-control datepicker" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -456,7 +457,7 @@
                                                             <i class="fa fa-car"></i>
                                                         </div>
                                                         <div class="col-6 pl-0 ">
-                                                            <select class="form-control one" required>
+                                                            <select tabindex="" class="form-control one" required>
                                                                 <option value="" selected>Please Select</option>
                                                                 <option>1</option>
                                                                 <option>1</option>
@@ -473,7 +474,7 @@
                                                             <span>Mortgage Holder:</span>
                                                         </div>
                                                         <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control"/>
+                                                            <input type="text" tabindex="" class="form-control"/>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -484,7 +485,7 @@
                                                             <span>Monthly Payment:</span>
                                                         </div>
                                                         <div class="col-6 pl-0 input-dollar-sign">
-                                                            <input type="text" placeholder="0.00" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
+                                                            <input type="text" tabindex="" placeholder="0.00" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -498,13 +499,8 @@
                                                             <span>Market Value:</span>
                                                         </div>
                                                         <div class="col-6 pl-0 input-dollar-sign">
-                                                            <input type="text" placeholder="0.00" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
+                                                            <input type="text" tabindex="" placeholder="0.00" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
                                                         </div>
-                                                        <div class="input-icon">
-                                                            <input type="text" class="form-control" placeholder="0.00">
-                                                            <i>$</i>
-                                                        </div>
-                                                        
                                                     </div>
                                                 </td>
 
@@ -515,7 +511,7 @@
                                                             <span>Mortgage Amount:</span>
                                                         </div>
                                                         <div class="col-6 pl-0 input-dollar-sign">
-                                                            <input type="text" placeholder="0.00" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
+                                                            <input type="text" tabindex="" placeholder="0.00" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -541,7 +537,7 @@
                                                             <span>Employer:</span>
                                                         </div>
                                                         <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
+                                                            <input type="text" tabindex="" class="form-control" />
                                                         </div>
                                                     </div>
                                                 </td>
@@ -552,7 +548,7 @@
                                                             <span>Suite No.:</span>
                                                         </div>
                                                         <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
+                                                            <input type="text" tabindex="" class="form-control" />
                                                         </div>
                                                     </div>
                                                 </td>
@@ -562,7 +558,7 @@
                                                             <span>Postal Code:</span>
                                                         </div>
                                                         <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
+                                                            <input type="text" tabindex="" class="form-control" />
                                                         </div>
                                                     </div>
                                                 </td>
@@ -575,7 +571,7 @@
                                                             <span>Position:</span>
                                                         </div>
                                                         <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
+                                                            <input type="text" tabindex="" class="form-control" />
                                                         </div>
                                                     </div>
                                                 </td>
@@ -587,7 +583,7 @@
                                                             <span>Address:</span>
                                                         </div>
                                                         <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
+                                                            <input type="text" tabindex="" class="form-control" />
                                                         </div>
                                                     </div>
                                                 </td>
@@ -597,7 +593,7 @@
                                                             <span>Telephone:</span>
                                                         </div>
                                                         <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
+                                                            <input type="text" tabindex="" class="form-control" />
                                                         </div>
                                                     </div>
                                                 </td>
@@ -612,7 +608,7 @@
                                                             <i class="fa fa-car"></i>
                                                         </div>
                                                         <div class="col-6 pl-0 ">
-                                                            <select class="form-control one" required>
+                                                            <select tabindex="" class="form-control one" required>
                                                                 <option value="" selected>Please Select</option>
                                                                 <option>1</option>
                                                                 <option>1</option>
@@ -631,7 +627,7 @@
                                                             <i class="fa fa-car"></i>
                                                         </div>
                                                         <div class="col-6 pl-0 ">
-                                                            <select class="form-control one" required>
+                                                            <select tabindex="" class="form-control one" required>
                                                                 <option value="" selected>Please Select</option>
                                                                 <option>1</option>
                                                                 <option>1</option>
@@ -649,7 +645,7 @@
                                                             <span>Gross Income:</span>
                                                         </div>
                                                         <div class="col-6 pl-0 input-dollar-sign">
-                                                            <input type="text" placeholder="0.00" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
+                                                            <input type="text" tabindex="" placeholder="0.00" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -664,7 +660,7 @@
                                                         </div>
                                                         <div class="col-6 pl-0">
                                                             <div class="datepicker-control">
-                                                                <input type="text" placeholder="MM/DD/YYYY" readonly class="form-control datepicker" />
+                                                                <input type="text" tabindex="" placeholder="MM/DD/YYYY" readonly class="form-control datepicker" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -677,7 +673,7 @@
                                                             <i class="fa fa-car"></i>
                                                         </div>
                                                         <div class="col-6 pl-0 ">
-                                                            <select class="form-control one" required>
+                                                            <select tabindex="" class="form-control one" required>
                                                                 <option value="" selected>Please Select</option>
                                                                 <option>1</option>
                                                                 <option>1</option>
@@ -697,7 +693,7 @@
                                                             <i class="fa fa-car"></i>
                                                         </div>
                                                         <div class="col-6 pl-0 ">
-                                                            <select class="form-control one" required>
+                                                            <select tabindex="" class="form-control one" required>
                                                                 <option value="" selected>Please Select</option>
                                                                 <option>1</option>
                                                                 <option>1</option>
@@ -729,7 +725,7 @@
                                                             <span>Other Income:</span>
                                                         </div>
                                                         <div class="col-6 pl-0 input-dollar-sign">
-                                                            <input type="text" placeholder="0.00" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
+                                                            <input type="text" tabindex="" placeholder="0.00" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -742,7 +738,7 @@
                                                             <i class="fa fa-car"></i>
                                                         </div>
                                                         <div class="col-6 pl-0 ">
-                                                            <select class="form-control one" required>
+                                                            <select tabindex="" class="form-control one" required>
                                                                 <option value="" selected>Please Select</option>
                                                                 <option>1</option>
                                                                 <option>1</option>
@@ -759,7 +755,7 @@
                                                             <span>Annual Total:</span>
                                                         </div>
                                                         <div class="col-6 pl-0 input-dollar-sign">
-                                                            <input type="text" placeholder="0.00" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
+                                                            <input type="text" tabindex="" placeholder="0.00" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -778,7 +774,7 @@
                                                             <i class="fa fa-car"></i>
                                                         </div>
                                                         <div class="col-6 pl-0 ">
-                                                            <select class="form-control one" required>
+                                                            <select tabindex="" class="form-control one" required>
                                                                 <option value="" selected>Please Select</option>
                                                                 <option>1</option>
                                                                 <option>1</option>
@@ -795,7 +791,7 @@
                                                             <span>Other Description:</span>
                                                         </div>
                                                         <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
+                                                            <input type="text" tabindex="" class="form-control" />
                                                         </div>
                                                     </div>
                                                 </td>
@@ -805,7 +801,7 @@
                                                             <span>Total Gross Annual Income:</span>
                                                         </div>
                                                         <div class="col-6 pl-0 input-dollar-sign">
-                                                            <input type="text" placeholder="0.00" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
+                                                            <input type="text" tabindex="" placeholder="0.00" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
                                                         </div>
                                                     </div>
                                                 </td>
