@@ -2650,7 +2650,7 @@ select.form-control.blue-arrow {
 }
 
 .btn:focus {
-  background: none;
+  background-image: none;
   outline: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -2666,14 +2666,13 @@ select.form-control.blue-arrow {
   color: #2b50ed;
 }
 
-@media (hover: hover) {
-  .btn.btn-primary:hover {
-    color: white;
-    background: #2b50ed;
-  }
-  .btn.btn-primary:hover i {
-    color: white;
-  }
+.btn.btn-primary:hover, .btn.btn-primary:focus {
+  color: white;
+  background: #2b50ed;
+}
+
+.btn.btn-primary:hover i, .btn.btn-primary:focus i {
+  color: white;
 }
 
 .btn.btn-green {
@@ -2686,14 +2685,13 @@ select.form-control.blue-arrow {
   color: #6dd400;
 }
 
-@media (hover: hover) {
-  .btn.btn-green:hover {
-    color: white;
-    background: #6dd400;
-  }
-  .btn.btn-green:hover i {
-    color: white;
-  }
+.btn.btn-green:hover, .btn.btn-green:focus {
+  color: white;
+  background: #6dd400;
+}
+
+.btn.btn-green:hover i, .btn.btn-green:focus i {
+  color: white;
 }
 
 .btn.btn-grey {
@@ -2707,15 +2705,14 @@ select.form-control.blue-arrow {
   color: #6dd400;
 }
 
-@media (hover: hover) {
-  .btn.btn-grey:hover {
-    color: #979797;
-    border-color: white;
-    background: white;
-  }
-  .btn.btn-grey:hover i {
-    color: #979797;
-  }
+.btn.btn-grey:hover, .btn.btn-grey:focus {
+  color: #979797;
+  border-color: white;
+  background: white;
+}
+
+.btn.btn-grey:hover i, .btn.btn-grey:focus i {
+  color: #979797;
 }
 
 .btn.btn-cyan {
@@ -2728,14 +2725,13 @@ select.form-control.blue-arrow {
   color: #68cdf0;
 }
 
-@media (hover: hover) {
-  .btn.btn-cyan:hover {
-    color: white;
-    background: #68cdf0;
-  }
-  .btn.btn-cyan:hover i {
-    color: white;
-  }
+.btn.btn-cyan:hover, .btn.btn-cyan:focus {
+  color: white;
+  background: #68cdf0;
+}
+
+.btn.btn-cyan:hover i, .btn.btn-cyan:focus i {
+  color: white;
 }
 
 .btn.btn-danger {
@@ -2748,14 +2744,13 @@ select.form-control.blue-arrow {
   color: #f04e31;
 }
 
-@media (hover: hover) {
-  .btn.btn-danger:hover {
-    color: white;
-    background: #f04e31;
-  }
-  .btn.btn-danger:hover i {
-    color: white;
-  }
+.btn.btn-danger:hover, .btn.btn-danger:focus {
+  color: white;
+  background: #f04e31;
+}
+
+.btn.btn-danger:hover i, .btn.btn-danger:focus i {
+  color: white;
 }
 
 .btn.btn-danger.filled {

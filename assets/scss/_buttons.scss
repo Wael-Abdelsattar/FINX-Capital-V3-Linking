@@ -49,7 +49,7 @@
   }
 
   &:focus {
-    background: none;
+    background-image: none;
     outline: 0;
     box-shadow: none;
   }
@@ -61,15 +61,15 @@
     i {
       color: $primaryBlue;
     }
-    @media (hover: hover) {
-      &:hover {
+    // @media (hover: hover) {
+      &:hover, &:focus {
         color: white;
         background: $primaryBlue;
         i {
           color: white;
         }
       }
-    }
+    // }
   }
 
   &.btn-green {
@@ -79,15 +79,15 @@
     i {
       color: $darkGreen;
     }
-    @media (hover: hover) {
-      &:hover {
+    // @media (hover: hover) {
+      &:hover, &:focus {
         color: white;
         background: $darkGreen;
         i {
           color: white;
         }
       }
-    }
+    // }
   }
 
   &.btn-grey {
@@ -98,8 +98,8 @@
     i {
       color: $darkGreen;
     }
-    @media (hover: hover) {
-      &:hover {
+    // @media (hover: hover) {
+      &:hover, &:focus {
         color: $lightGreyColor;
         border-color: white;
         background: white;
@@ -107,7 +107,7 @@
           color: $lightGreyColor;
         }
       }
-    }
+    // }
   }
 
   &.btn-cyan {
@@ -117,15 +117,15 @@
     i {
       color: #68cdf0;
     }
-    @media (hover: hover) {
-      &:hover {
+    // @media (hover: hover) {
+      &:hover, &:focus {
         color: white;
         background: #68cdf0;
         i {
           color: white;
         }
       }
-    }
+    // }
   }
 
   &.btn-danger {
@@ -135,15 +135,15 @@
     i {
       color: $lightRed;
     }
-    @media (hover: hover) {
-      &:hover {
+    // @media (hover: hover) {
+      &:hover, &:focus {
         color: white;
         background: $lightRed;
         i {
           color: white;
         }
       }
-    }
+    // }
     &.filled {
       color: white;
       background: $lightRed;
