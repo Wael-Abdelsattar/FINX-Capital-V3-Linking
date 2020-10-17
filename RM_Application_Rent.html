@@ -42,20 +42,39 @@
 	
     <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" />
     <link rel="stylesheet" href="assets/css/Vehicle-tab.css" />
-    <title>Application_Commercial Copy</title>
+    <title>Application_Rent</title>
 </head>
 
 <body>
     <div class="global-wrapper op-page">
         <header>
             <div class="container-fluid">
-                <a href="#" class="logo">
-                    <img src="assets/images/logo.svg" />
-                </a>
+                <a href="#" class="logo open-sidemenu">
+        <img src="assets/images/logo.svg" alt="FINX" />
+      </a>
                 <div class="spacer"></div>
-               
+            
             </div>
         </header>
+  <div class="sidemenu">
+    <img src="assets/images/logo.svg" alt="">
+    <button type="button" class="btn btn-icon close-menu">
+      <img src="assets/images/close-red.svg" alt="">
+    </button>
+    <nav>
+      <ul>
+        <li>
+          <a href="#" class="active">Home</a>
+        </li>
+        <li>
+          <a href="./RM_Profile.html">Profile</a>
+        </li>
+        <li>
+          <a href="#" onClick="toggleFullScreen();">Full Screen</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
         <div class="meta-bar">
             <div>
@@ -183,11 +202,10 @@
                             <div class="row">
                                 <div class="col-md-12">
 
-                                    <div class="dropdown btn-green float-left w-180">
+                                    <div class="dropdown btn-green float-left">
                                         <select id="ddlChangeTo" class="selectpicker text-black">
-                                            <option class="text-black" selected="true"> Commercial Applicant</option>
+                                            <option class="text-black" selected="true"> Primary Applicant</option>
                                             <option>Inactive</option>
-                                            <option>Delete</option>
                                         </select>
                                     </div>
 
@@ -195,7 +213,7 @@
                                         <select id="ddlChangeTo" class="selectpicker text-black">
                                             <optgroup label="Change to:">
 
-                                                <option class="text-black" selected="true"> Mark - Primary</option>
+                                                <option class="text-black" selected="true"> Co Applicant</option>
                                                 <option>Primary</option>
                                                 <option>Guarantor</option>
                                                 <option>Co Signer</option>
@@ -207,7 +225,7 @@
 
                                     <div class="dropdown btn-white float-left">
                                         <select id="ddlChangeTo" class="selectpicker text-black">
-                                            <option class="text-black" selected="true"> Co Applicant 2</option>
+                                            <option class="text-black" selected="true">Co Applicant 2</option>
                                             <option>Inactive</option>
                                         </select>
                                     </div>
@@ -233,7 +251,7 @@
                                                     <option>Co Applicant</option>
                                                     <option>Guarantor</option>
                                                     <option>Co Signer</option>
-                                                    <option>Primary</option>
+                                                    <option>Commercial Applicant </option>
                                                 </optgroup>
                                             </select>
                                         </div>
@@ -258,7 +276,7 @@
 
                             <div class="col-12 ">
                                 <div class="heading ">
-                                    Company Information
+                                    Personal Information
                                 </div>
                                 <div class="table-responsive">
                                     <table class="table table-bordered normal">
@@ -267,7 +285,7 @@
                                                 <td>
                                                     <div class="row">
                                                         <div class="col-6 my-auto">
-                                                            <span>Ownership Type: </span>
+                                                            <span>Salutation: </span>
                                                             <i class="fas fa-search"></i>
                                                             <i class="fa fa-car"></i>
                                                         </div>
@@ -286,34 +304,7 @@
                                                 <td>
                                                     <div class="row">
                                                         <div class="col-6 my-auto">
-                                                            <span>Phone:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto pr-0">
-                                                            <span>Number of Employees:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-
-
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span> Industry Type:</span>
+                                                            <span>Suffix:</span>
                                                         </div>
                                                         <div class="col-6 pl-0 ">
                                                             <select class="form-control one" required>
@@ -330,89 +321,60 @@
                                                 <td>
                                                     <div class="row">
                                                         <div class="col-6 my-auto">
-                                                            <span>Ext:</span>
+                                                            <span> Gender:</span>
                                                         </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span> Years in Business:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
+                                                        <div class="col-6 pl-0 ">
+                                                            <select class="form-control one" required>
+                                                                <option value="" selected>Please Select</option>
+                                                                <option>1</option>
+                                                                <option>1</option>
+                                                                <option>1</option>
+                                                                <option>1</option>
+                                                            </select>
 
-                                            </tr>
-
-                                            <tr>
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto search-icon pr-0">
-                                                            <span>Legal Company Name:<i class="icon-search custom"></i></span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span> Fax:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span> Relation to primary:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
                                                         </div>
                                                     </div>
                                                 </td>
 
                                             </tr>
                                             <tr>
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-6 my-auto">
+                                                            <span>First Name: </span>
+                                                        </div>
+                                                        <div class="col-6 pl-0">
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-6 my-auto">
+                                                            <span>Date of Birth:</span>
+                                                        </div>
+                                                        <div class="col-6 pl-0">
+                                                            <div class="datepicker-control">
+                                                                <input type="text" placeholder="MM/DD/YYYY" readonly class="form-control datepicker" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
 
                                                 <td>
                                                     <div class="row">
                                                         <div class="col-6 my-auto">
-                                                            <span>Doing Business As:</span>
+                                                            <span> Marital Status:</span>
                                                         </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span> Principal Owner(s):</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span> Website:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
+                                                        <div class="col-6 pl-0 ">
+                                                            <select class="form-control one" required>
+                                                                <option value="" selected>Please Select</option>
+                                                                <option>1</option>
+                                                                <option>1</option>
+                                                                <option>1</option>
+                                                                <option>1</option>
+                                                            </select>
+
                                                         </div>
                                                     </div>
                                                 </td>
@@ -422,8 +384,8 @@
 
                                                 <td>
                                                     <div class="row">
-                                                        <div class="col-6 my-auto pr-0">
-                                                            <span>Description of Business:</span>
+                                                        <div class="col-6 my-auto">
+                                                            <span>Middle Name:</span>
                                                         </div>
                                                         <div class="col-6 pl-0">
                                                             <input type="text" class="form-control" />
@@ -431,14 +393,61 @@
                                                     </div>
                                                 </td>
                                                 <td>
-
+                                                    <div class="row">
+                                                        <div class="col-6 my-auto">
+                                                            <span> SIN:</span>
+                                                        </div>
+                                                        <div class="col-6 pl-0">
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
                                                 </td>
                                                 <td>
-
+                                                    <div class="row">
+                                                        <div class="col-6 my-auto">
+                                                            <span> Email:</span>
+                                                        </div>
+                                                        <div class="col-6 pl-0">
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
                                                 </td>
 
                                             </tr>
+                                            <tr>
 
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-6 my-auto search-icon">
+                                                            <span>Last Name: <i class="icon-search "></i></span>
+                                                        </div>
+                                                        <div class="col-6 pl-0">
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-6 my-auto">
+                                                            <span> Phone:</span>
+                                                        </div>
+                                                        <div class="col-6 pl-0">
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-6 my-auto">
+                                                            <span> Cell Phone:</span>
+                                                        </div>
+                                                        <div class="col-6 pl-0">
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+
+                                            </tr>
 
                                         </tbody>
                                     </table>
@@ -446,7 +455,7 @@
                             </div>
                             <div class="col-12 mt-2">
                                 <div class="heading ">
-                                    Company Address
+                                    Current Address
                                 </div>
                                 <div class="table-responsive">
                                     <table class="table table-bordered normal">
@@ -543,36 +552,27 @@
                                     </table>
                                 </div>
                             </div>
-                        
+
                             <div class="col-12 mt-2">
                                 <div class="heading ">
-                                    Mailing Address
+                                    Home / Mortgage Details
                                 </div>
                                 <div class="table-responsive">
                                     <table class="table table-bordered normal">
                                         <tbody>
                                             <tr>
+
                                                 <td>
                                                     <div class="row">
                                                         <div class="col-6 my-auto">
-                                                            <span>Suite No/P.O box#:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Province: </span>
+                                                            <span>Home: </span>
                                                             <i class="fas fa-search"></i>
                                                             <i class="fa fa-car"></i>
                                                         </div>
                                                         <div class="col-6 pl-0 ">
                                                             <select class="form-control one" required>
                                                                 <option value="" selected>Please Select</option>
-                                                                <option>1</option>
+                                                                <option selected>Rent</option>
                                                                 <option>1</option>
                                                                 <option>1</option>
                                                                 <option>1</option>
@@ -581,7 +581,64 @@
                                                         </div>
                                                     </div>
                                                 </td>
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-6 my-auto">
+                                                            <span>Landlord Information:</span>
+                                                        </div>
+                                                        <div class="col-6 pl-0">
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </td>
 
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-6 my-auto">
+                                                            <span>Montly Payment:</span>
+                                                        </div>
+                                                        <div class="col-6 pl-0 input-dollar-sign">
+                                                            <input type="text" placeholder="0.00" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
+                                                        </div>
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <div class="heading ">
+                                    Current Employment
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered normal">
+                                        <tbody>
+                                            <tr>
+
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-6 my-auto">
+                                                            <span>Employer:</span>
+                                                        </div>
+                                                        <div class="col-6 pl-0">
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-6 my-auto">
+                                                            <span>Suite No.:</span>
+                                                        </div>
+                                                        <div class="col-6 pl-0">
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </td>
                                                 <td>
                                                     <div class="row">
                                                         <div class="col-6 my-auto">
@@ -598,215 +655,6 @@
                                                 <td>
                                                     <div class="row">
                                                         <div class="col-6 my-auto">
-                                                            <span>Address: </span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span> City:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0 ">
-                                                            <select class="form-control one" required>
-                                                                <option value="" selected>Please Select</option>
-                                                                <option>1</option>
-                                                                <option>1</option>
-                                                                <option>1</option>
-                                                                <option>1</option>
-                                                            </select>
-
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Move in Date:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <div class="datepicker-control">
-                                                                <input type="text" placeholder="MM/DD/YYYY" readonly class="form-control datepicker" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                         
-                            <div class="col-12 mt-2">
-                                <div class="heading ">
-                                    Property / Mortgage Details
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered normal">
-                                        <tbody>
-                                            <tr>
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Property: </span>
-                                                            <i class="fas fa-search"></i>
-                                                            <i class="fa fa-car"></i>
-                                                        </div>
-                                                        <div class="col-6 pl-0 ">
-                                                            <select class="form-control one" required>
-                                                                <option value="" selected>Please Select</option>
-                                                                <option>1</option>
-                                                                <option>1</option>
-                                                                <option>1</option>
-                                                                <option>1</option>
-                                                            </select>
-
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Mortgage Holder:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Monthly Payment:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0 input-dollar-sign">
-                                                            <input type="text" placeholder="0.00" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Market Value:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0 input-dollar-sign">
-                                                            <input type="text" placeholder="0.00" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Mortgage Amount:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0 input-dollar-sign">
-                                                            <input type="text" placeholder="0.00" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td> </td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-2">
-                                <div class="heading ">
-                                    Extra Company Details Accountant Details
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered normal">
-                                        <tbody>
-
-                                            <tr>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Accounting Firm/Accountant</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Contact:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Phone:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <div class="col-12 mt-2">
-                                <div class="heading ">
-                                    Company Officers
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered normal mb-2">
-                                        <tbody>
-                                            <tr>
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Officer Name:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Address,City,Province,Po.:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
                                                             <span>Position:</span>
                                                         </div>
                                                         <div class="col-6 pl-0">
@@ -815,453 +663,7 @@
                                                     </div>
                                                 </td>
 
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Phone:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
 
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto pr-0">
-                                                            <span>Ownership Percentage:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-
-                                                </td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered normal no-heading">
-                                        <tbody>
-                                            <tr>
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Officer Name:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Address,City,Province,Po.:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Position:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Phone:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto pr-0">
-                                                            <span>Ownership Percentage:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-
-                                                </td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-
-                            </div>
-
-                            <div class="col-12 mt-2">
-                                <div class="heading ">
-                                    Trade Reference
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered normal mb-2">
-                                        <tbody>
-                                            <tr>
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Trade Name:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Address,City,Province,Po.:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Contact:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Phone:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-
-                                                </td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered normal no-heading">
-                                        <tbody>
-                                            <tr>
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Trade Name:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Address,City,Province,Po.:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Contact:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Phone:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-
-                                                </td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-
-                            <div class="col-12 mt-2">
-                                <div class="heading ">
-                                    Financial Summary Bank Contact
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered normal">
-                                        <tbody>
-
-                                            <tr>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Name:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Phone:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Financial Year End:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <div class="datepicker-control">
-                                                                <input type="text" placeholder="MM/DD/YYYY" readonly class="form-control datepicker" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-
-                                            <tr>
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Position:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Fax:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                </td>
-
-
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-2">
-                                <div class="heading ">
-                                    Bank Information
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered normal">
-                                        <tbody>
-
-                                            <tr>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Bank Name:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Bank Number:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Branch Number:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-
-                                            <tr>
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Account Type:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Account Number:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                </td>
-
-
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <div class="col-12 mt-2">
-                                <div class="heading ">
-                                    Bank Address
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered normal">
-                                        <tbody>
-                                            <tr>
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Suite No/P.O box#:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Province: </span>
-                                                            <i class="fas fa-search"></i>
-                                                            <i class="fa fa-car"></i>
-                                                        </div>
-                                                        <div class="col-6 pl-0 ">
-                                                            <select class="form-control one" required>
-                                                                <option value="" selected>Please Select</option>
-                                                                <option>1</option>
-                                                                <option>1</option>
-                                                                <option>1</option>
-                                                                <option>1</option>
-                                                            </select>
-
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Postal Code:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
                                                 <td>
                                                     <div class="row">
                                                         <div class="col-6 my-auto">
@@ -1269,6 +671,38 @@
                                                         </div>
                                                         <div class="col-6 pl-0">
                                                             <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-6 my-auto">
+                                                            <span>Telephone:</span>
+                                                        </div>
+                                                        <div class="col-6 pl-0">
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-6 my-auto">
+                                                            <span>Status: </span>
+                                                            <i class="fas fa-search"></i>
+                                                            <i class="fa fa-car"></i>
+                                                        </div>
+                                                        <div class="col-6 pl-0 ">
+                                                            <select class="form-control one" required>
+                                                                <option value="" selected>Please Select</option>
+                                                                <option>1</option>
+                                                                <option>1</option>
+                                                                <option>1</option>
+                                                                <option>1</option>
+                                                            </select>
+
                                                         </div>
                                                     </div>
                                                 </td>
@@ -1291,10 +725,25 @@
                                                         </div>
                                                     </div>
                                                 </td>
+
                                                 <td>
                                                     <div class="row">
                                                         <div class="col-6 my-auto">
-                                                            <span>Move in Date:</span>
+                                                            <span>Gross Income:</span>
+                                                        </div>
+                                                        <div class="col-6 pl-0 input-dollar-sign">
+                                                            <input type="text" placeholder="0.00" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
+                                                        </div>
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-6 my-auto">
+                                                            <span>Start Date:</span>
                                                         </div>
                                                         <div class="col-6 pl-0">
                                                             <div class="datepicker-control">
@@ -1303,6 +752,147 @@
                                                         </div>
                                                     </div>
                                                 </td>
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-6 my-auto">
+                                                            <span>Province: </span>
+                                                            <i class="fas fa-search"></i>
+                                                            <i class="fa fa-car"></i>
+                                                        </div>
+                                                        <div class="col-6 pl-0 ">
+                                                            <select class="form-control one" required>
+                                                                <option value="" selected>Please Select</option>
+                                                                <option>1</option>
+                                                                <option>1</option>
+                                                                <option>1</option>
+                                                                <option>1</option>
+                                                            </select>
+
+                                                        </div>
+                                                    </div>
+                                                </td>
+
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-6 my-auto">
+                                                            <span>Gross Income per: </span>
+                                                            <i class="fas fa-search"></i>
+                                                            <i class="fa fa-car"></i>
+                                                        </div>
+                                                        <div class="col-6 pl-0 ">
+                                                            <select class="form-control one" required>
+                                                                <option value="" selected>Please Select</option>
+                                                                <option>1</option>
+                                                                <option>1</option>
+                                                                <option>1</option>
+                                                                <option>1</option>
+                                                            </select>
+
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <div class="heading ">
+                                    Other Income Details
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered normal">
+                                        <tbody>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-6 my-auto">
+                                                            <span>Other Income:</span>
+                                                        </div>
+                                                        <div class="col-6 pl-0 input-dollar-sign">
+                                                            <input type="text" placeholder="0.00" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
+                                                        </div>
+                                                    </div>
+                                                </td>
+
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-6 my-auto">
+                                                            <span>Other Income Type: </span>
+                                                            <i class="fas fa-search"></i>
+                                                            <i class="fa fa-car"></i>
+                                                        </div>
+                                                        <div class="col-6 pl-0 ">
+                                                            <select class="form-control one" required>
+                                                                <option value="" selected>Please Select</option>
+                                                                <option>1</option>
+                                                                <option>1</option>
+                                                                <option>1</option>
+                                                                <option>1</option>
+                                                            </select>
+
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-6 my-auto">
+                                                            <span>Annual Total:</span>
+                                                        </div>
+                                                        <div class="col-6 pl-0 input-dollar-sign">
+                                                            <input type="text" placeholder="0.00" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
+                                                        </div>
+                                                    </div>
+                                                </td>
+
+
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-6 my-auto">
+                                                            <span>Gross Income Per:</span>
+                                                            <i class="fas fa-search"></i>
+                                                            <i class="fa fa-car"></i>
+                                                        </div>
+                                                        <div class="col-6 pl-0 ">
+                                                            <select class="form-control one" required>
+                                                                <option value="" selected>Please Select</option>
+                                                                <option>1</option>
+                                                                <option>1</option>
+                                                                <option>1</option>
+                                                                <option>1</option>
+                                                            </select>
+
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-6 my-auto">
+                                                            <span>Other Description:</span>
+                                                        </div>
+                                                        <div class="col-6 pl-0">
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-6 my-auto pr-0">
+                                                            <span>Total Gross Annual Income:</span>
+                                                        </div>
+                                                        <div class="col-6 pl-0 input-dollar-sign">
+                                                            <input type="text" placeholder="0.00" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
+                                                        </div>
+                                                    </div>
+                                                </td>
+
 
                                             </tr>
 

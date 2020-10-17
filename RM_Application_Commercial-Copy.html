@@ -42,20 +42,39 @@
 	
     <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" />
     <link rel="stylesheet" href="assets/css/Vehicle-tab.css" />
-    <title>Application_Commercial 1_1</title>
+    <title>Application_Commercial Copy</title>
 </head>
 
 <body>
     <div class="global-wrapper op-page">
         <header>
             <div class="container-fluid">
-                <a href="#" class="logo">
-                    <img src="assets/images/logo.svg" />
-                </a>
+                <a href="#" class="logo open-sidemenu">
+        <img src="assets/images/logo.svg" alt="FINX" />
+      </a>
                 <div class="spacer"></div>
                
             </div>
         </header>
+  <div class="sidemenu">
+    <img src="assets/images/logo.svg" alt="">
+    <button type="button" class="btn btn-icon close-menu">
+      <img src="assets/images/close-red.svg" alt="">
+    </button>
+    <nav>
+      <ul>
+        <li>
+          <a href="#" class="active">Home</a>
+        </li>
+        <li>
+          <a href="./RM_Profile.html">Profile</a>
+        </li>
+        <li>
+          <a href="#" onClick="toggleFullScreen();">Full Screen</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
         <div class="meta-bar">
             <div>
@@ -354,10 +373,9 @@
 
                                                 <td>
                                                     <div class="row">
-                                                          <div class="col-6 my-auto search-icon pr-0">
+                                                        <div class="col-6 my-auto search-icon pr-0">
                                                             <span>Legal Company Name:<i class="icon-search custom"></i></span>
                                                         </div>
-                                                       
                                                         <div class="col-6 pl-0">
                                                             <input type="text" class="form-control" />
                                                         </div>
@@ -410,7 +428,7 @@
                                                 <td>
                                                     <div class="row">
                                                         <div class="col-6 my-auto">
-                                                            <span> Website: </span>
+                                                            <span> Website:</span>
                                                         </div>
                                                         <div class="col-6 pl-0">
                                                             <input type="text" class="form-control" />
@@ -544,104 +562,7 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="col-12 mt-2">
-                                <div class="heading ">
-                                    Previous Company Address
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered normal">
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Suite No/P.O box#:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Province: </span>
-                                                            <i class="fas fa-search"></i>
-                                                            <i class="fa fa-car"></i>
-                                                        </div>
-                                                        <div class="col-6 pl-0 ">
-                                                            <select class="form-control one" required>
-                                                                <option value="" selected>Please Select</option>
-                                                                <option>1</option>
-                                                                <option>1</option>
-                                                                <option>1</option>
-                                                                <option>1</option>
-                                                            </select>
-
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Postal Code:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Address: </span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span> City:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0 ">
-                                                            <select class="form-control one" required>
-                                                                <option value="" selected>Please Select</option>
-                                                                <option>1</option>
-                                                                <option>1</option>
-                                                                <option>1</option>
-                                                                <option>1</option>
-                                                            </select>
-
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Duration:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" placeholder="Month / Years" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
+                        
                             <div class="col-12 mt-2">
                                 <div class="heading ">
                                     Mailing Address
@@ -741,104 +662,7 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="col-12 mt-2">
-                                <div class="heading ">
-                                    Previous Mailing Address
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered normal">
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Suite No/P.O box#:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Province: </span>
-                                                            <i class="fas fa-search"></i>
-                                                            <i class="fa fa-car"></i>
-                                                        </div>
-                                                        <div class="col-6 pl-0 ">
-                                                            <select class="form-control one" required>
-                                                                <option value="" selected>Please Select</option>
-                                                                <option>1</option>
-                                                                <option>1</option>
-                                                                <option>1</option>
-                                                                <option>1</option>
-                                                            </select>
-
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Postal Code:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Address: </span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span> City:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0 ">
-                                                            <select class="form-control one" required>
-                                                                <option value="" selected>Please Select</option>
-                                                                <option>1</option>
-                                                                <option>1</option>
-                                                                <option>1</option>
-                                                                <option>1</option>
-                                                            </select>
-
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-6 my-auto">
-                                                            <span>Duration:</span>
-                                                        </div>
-                                                        <div class="col-6 pl-0">
-                                                            <input type="text" class="form-control" placeholder="Month / Years" />
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
+                         
                             <div class="col-12 mt-2">
                                 <div class="heading ">
                                     Property / Mortgage Details

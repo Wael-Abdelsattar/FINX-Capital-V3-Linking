@@ -23,7 +23,7 @@
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Worksheet_Activated_Copy_1</title>
+    <title>Product_#2</title>
 <meta data-react-helmet="true" name="apple-mobile-web-app-capable" content="yes">
     <meta data-react-helmet="true" name="apple-mobile-web-app-status-bar-style" content="#68CDF0">
     <meta data-react-helmet="true" name="apple-mobile-web-app-title" content="FINX">
@@ -48,11 +48,30 @@
     <div class="global-wrapper op-page">
       <header>
         <div class="container-fluid">
-          <a href="#" class="logo">
-            <img src="assets/images/logo.svg" />
-          </a>
+          <a href="#" class="logo open-sidemenu">
+        <img src="assets/images/logo.svg" alt="FINX" />
+      </a>
         </div>
       </header>
+  <div class="sidemenu">
+    <img src="assets/images/logo.svg" alt="">
+    <button type="button" class="btn btn-icon close-menu">
+      <img src="assets/images/close-red.svg" alt="">
+    </button>
+    <nav>
+      <ul>
+        <li>
+          <a href="#" class="active">Home</a>
+        </li>
+        <li>
+          <a href="./RM_Profile.html">Profile</a>
+        </li>
+        <li>
+          <a href="#" onClick="toggleFullScreen();">Full Screen</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
       <div class="meta-bar">
         <div>Date: August - 17 -2020</div>
@@ -63,7 +82,7 @@
 
       <div class="container-fluid">
         <div class="d-flex align-items-end">
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
               <a
                 class="nav-link"
@@ -90,7 +109,7 @@
             </li>
             <li class="nav-item" role="presentation">
               <a
-                class="nav-link"
+                class="nav-link active"
                 id="products-tab"
                 data-toggle="tab"
                 href="#products"
@@ -102,7 +121,7 @@
             </li>
             <li class="nav-item" role="presentation">
               <a
-                class="nav-link active"
+                class="nav-link"
                 id="worksheet-tab"
                 data-toggle="tab"
                 href="#worksheet"
@@ -160,12 +179,104 @@
                 >Documents</a
               >
             </li>
+          </ul> -->
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link active"
+                id="application-tab"
+                href="./CS_Application-1.html"
+                role="tab"
+                aria-controls="application"
+                aria-selected="true"
+                >Application</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="vehicle-info-tab"
+                href="./RM_Vehicle-Info.html"
+                role="tab"
+                aria-controls="vehicle-info"
+                aria-selected="false"
+                >Vehicle Info</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="products-tab"
+                href="./Products.html"
+                role="tab"
+                aria-controls="products"
+                aria-selected="false"
+                >Products</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="worksheet-tab"
+                href="./Worksheet_Mixed.html"
+                role="tab"
+                aria-controls="worksheet"
+                aria-selected="false"
+                >Worksheet</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="disclosure-tab"
+                data-toggle="tab"
+                href="#disclosure"
+                role="tab"
+                aria-controls="disclosure"
+                aria-selected="false"
+                >Disclosure</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="decision-tab"
+                
+                href="./RM_Decisions_Alert_Popup.html"
+                role="tab"
+                aria-controls="decision"
+                aria-selected="false"
+                >Decision</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="lenders-note-tab"
+                href="./RM_Lenders_Note.html"
+                role="tab"
+                aria-controls="lenders-note"
+                aria-selected="false"
+                >Lenders Note</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="documents-tab"
+                href="./RM_Documents.html"
+                role="tab"
+                aria-controls="documents"
+                aria-selected="false"
+                >Documents</a
+              >
+            </li>
           </ul>
           <div class="spacer"></div>
           <button type="button" class="btn btn-danger mb-1">Cancel</button>
           <button type="button" class="btn btn-primary ml-1 mb-1">Save</button>
         </div>
-        <div class="tab-content pb-0" id="myTabContent">
+        <div class="tab-content" id="myTabContent">
           <div
             class="tab-pane fade"
             id="application"
@@ -183,7 +294,7 @@
             ...
           </div>
           <div
-            class="tab-pane fade"
+            class="tab-pane fade active show"
             id="products"
             role="tabpanel"
             aria-labelledby="products-tab"
@@ -233,7 +344,7 @@
                         </select>
                       </td>
                       <td class="checkbox-column">
-                        <a href="#"><img src="assets/images/table-grid.svg" alt=""></a>
+                        <a href="#" data-toggle="modal" data-target="#warranty-modal"><img src="assets/images/table-grid.svg" alt=""></a>
                       </td>
                       <td class="text-right" class="text-right">$2,000</td>
                       <td class="no-border-left text-right">$1,000</td>
@@ -294,7 +405,7 @@
                         </select>
                       </td>
                       <td class="checkbox-column">
-                        <img src="assets/images/table-grid.svg" alt="">
+                        <a href="#" data-toggle="modal" data-target="#warranty-modal"><img src="assets/images/table-grid.svg" alt=""></a>
                       </td>
                       <td class="text-right">$2,000</td>
                       <td class="no-border-left text-right">$1,000</td>
@@ -314,339 +425,341 @@
               <div class="block-header colored bold medium-text">
                 <div class="d-flex align-items-center">
                   Products
-                  <span class="tiny-text bold ml-auto"><span class="mr-3">Category Profit:</span> $2,946.61</span>
+                  <span class="tiny-text bold ml-auto"><span class="mr-3">Category Profit:</span> $12,946.61</span>
                 </div>
               </div>
               <div class="block-content">
-                <table class="table table-bordered normal m-0 dark-borders small-padding">
-                  <thead class="blue-thead">
-                    <tr>
-                      <th class="w-20">Product Name</th>
-                      <th class="w-20">Provider</th>
-                      <th class="w-20">Tax</th>
-                      <th>Grid</th>
-                      <th class="text-right w-7">Price</th>
-                      <th class="no-border-left text-right w-7">Cost</th>
-                      <th class="no-border-left text-right w-7">Profit</th>
-                      <th class="small text-center text-nowrap">Retained %</th>
-                      <th class="no-border-left small text-center text-nowrap">Retained $</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="row-2">
-                          <label class="custom-control-label" for="row-2">Tire & Rim</label>
-                        </div>
+                <div class="custom-scroll height-305 light-bg">
+                  <table class="table table-bordered normal m-0 dark-borders small-padding">
+                    <thead class="blue-thead sticky">
+                      <tr>
+                        <th class="w-20">Product Name</th>
+                        <th class="w-20">Provider</th>
+                        <th class="w-20">Tax</th>
+                        <th>Grid</th>
+                        <th class="text-right w-7">Price</th>
+                        <th class="no-border-left text-right w-7">Cost</th>
+                        <th class="no-border-left text-right w-7">Profit</th>
+                        <th class="small text-center text-nowrap">Retained %</th>
+                        <th class="no-border-left small text-center text-nowrap">Retained $</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="row-2">
+                            <label class="custom-control-label" for="row-2">Tire & Rim</label>
+                          </div>
+                        </td>
+                        <td>
+                          <select class="form-control small blue-arrow">
+                            <option value="1">Poketbook Protection</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select class="form-control small blue-arrow">
+                            <option value="1">GST + PST</option>
+                            <option value="2">No Taxes</option>
+                          </select>
+                        </td>
+                        <td class="checkbox-column">
+                        <a href="#" data-toggle="modal" data-target="#warranty-modal"><img src="assets/images/table-grid.svg" alt=""></a>
                       </td>
-                      <td>
-                        <select class="form-control small blue-arrow">
-                          <option value="1">Poketbook Protection</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                        </select>
+                        <td class="text-right">$2,000</td>
+                        <td class="no-border-left text-right">$1,000</td>
+                        <td class="no-border-left text-right">$1,000</td>
+                        <td>
+                          <input type="text" class="form-control small">
+                        </td>
+                        <td class="no-border-left">
+                          <input type="text" class="form-control small">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="row-3">
+                            <label class="custom-control-label" for="row-3">KeyFob</label>
+                          </div>
+                        </td>
+                        <td>
+                          <select class="form-control small blue-arrow">
+                            <option value="1">Poketbook Protection</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select class="form-control small blue-arrow">
+                            <option value="1">GST + PST</option>
+                            <option value="2">No Taxes</option>
+                          </select>
+                        </td>
+                        <td class="checkbox-column">
+                        <a href="#" data-toggle="modal" data-target="#warranty-modal"><img src="assets/images/table-grid.svg" alt=""></a>
                       </td>
-                      <td>
-                        <select class="form-control small blue-arrow">
-                          <option value="1">GST + PST</option>
-                          <option value="2">No Taxes</option>
-                        </select>
+                        <td class="text-right">$2,000</td>
+                        <td class="no-border-left text-right">$1,000</td>
+                        <td class="no-border-left text-right">$1,000</td>
+                        <td>
+                          <input type="text" class="form-control small">
+                        </td>
+                        <td class="no-border-left">
+                          <input type="text" class="form-control small">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="row-4">
+                            <label class="custom-control-label" for="row-4">Warranty</label>
+                          </div>
+                        </td>
+                        <td>
+                          <select class="form-control small blue-arrow">
+                            <option value="1">Poketbook Protection</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select class="form-control small blue-arrow">
+                            <option value="1">GST + PST</option>
+                            <option value="2">No Taxes</option>
+                          </select>
+                        </td>
+                        <td class="checkbox-column">
+                        <a href="#" data-toggle="modal" data-target="#warranty-modal"><img src="assets/images/table-grid.svg" alt=""></a>
                       </td>
-                      <td class="checkbox-column">
-                        <img src="assets/images/table-grid.svg" alt="">
+                        <td class="text-right">$2,000</td>
+                        <td class="no-border-left text-right">$1,000</td>
+                        <td class="no-border-left text-right">$1,000</td>
+                        <td>
+                          <input type="text" class="form-control small">
+                        </td>
+                        <td class="no-border-left">
+                          <input type="text" class="form-control small">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="row-5">
+                            <label class="custom-control-label" for="row-5">Life Insurance</label>
+                          </div>
+                        </td>
+                        <td>
+                          <select class="form-control small blue-arrow">
+                            <option value="1">Poketbook Protection</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select class="form-control small blue-arrow">
+                            <option value="1">GST + PST</option>
+                            <option value="2">No Taxes</option>
+                          </select>
+                        </td>
+                        <td class="checkbox-column">
+                        <a href="#" data-toggle="modal" data-target="#warranty-modal"><img src="assets/images/table-grid.svg" alt=""></a>
                       </td>
-                      <td class="text-right">$2,000</td>
-                      <td class="no-border-left text-right">$1,000</td>
-                      <td class="no-border-left text-right">$1,000</td>
-                      <td>
-                        <input type="text" class="form-control small">
+                        <td class="text-right">$2,000</td>
+                        <td class="no-border-left text-right">$1,000</td>
+                        <td class="no-border-left text-right">$1,000</td>
+                        <td>
+                          <input type="text" class="form-control small">
+                        </td>
+                        <td class="no-border-left">
+                          <input type="text" class="form-control small">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="row-6">
+                            <label class="custom-control-label" for="row-6">Walkaway</label>
+                          </div>
+                        </td>
+                        <td>
+                          <select class="form-control small blue-arrow">
+                            <option value="1">Poketbook Protection</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select class="form-control small blue-arrow">
+                            <option value="1">GST + PST</option>
+                            <option value="2">No Taxes</option>
+                          </select>
+                        </td>
+                        <td class="checkbox-column">
+                        <a href="#" data-toggle="modal" data-target="#warranty-modal"><img src="assets/images/table-grid.svg" alt=""></a>
                       </td>
-                      <td class="no-border-left">
-                        <input type="text" class="form-control small">
+                        <td class="text-right">$2,000</td>
+                        <td class="no-border-left text-right">$1,000</td>
+                        <td class="no-border-left text-right">$1,000</td>
+                        <td>
+                          <input type="text" class="form-control small">
+                        </td>
+                        <td class="no-border-left">
+                          <input type="text" class="form-control small">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="row-7">
+                            <label class="custom-control-label" for="row-7">Chemicals</label>
+                          </div>
+                        </td>
+                        <td>
+                          <select class="form-control small blue-arrow">
+                            <option value="1">Poketbook Protection</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select class="form-control small blue-arrow">
+                            <option value="1">GST + PST</option>
+                            <option value="2">No Taxes</option>
+                          </select>
+                        </td>
+                        <td class="checkbox-column">
+                        <a href="#" data-toggle="modal" data-target="#warranty-modal"><img src="assets/images/table-grid.svg" alt=""></a>
                       </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="row-3">
-                          <label class="custom-control-label" for="row-3">KeyFob</label>
-                        </div>
+                        <td class="text-right">$2,000</td>
+                        <td class="no-border-left text-right">$1,000</td>
+                        <td class="no-border-left text-right">$1,000</td>
+                        <td>
+                          <input type="text" class="form-control small">
+                        </td>
+                        <td class="no-border-left">
+                          <input type="text" class="form-control small">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="row-8">
+                            <label class="custom-control-label" for="row-8">Gap</label>
+                          </div>
+                        </td>
+                        <td>
+                          <select class="form-control small blue-arrow">
+                            <option value="1">Poketbook Protection</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select class="form-control small blue-arrow">
+                            <option value="1">GST + PST</option>
+                            <option value="2">No Taxes</option>
+                          </select>
+                        </td>
+                        <td class="checkbox-column">
+                        <a href="#" data-toggle="modal" data-target="#warranty-modal"><img src="assets/images/table-grid.svg" alt=""></a>
                       </td>
-                      <td>
-                        <select class="form-control small blue-arrow">
-                          <option value="1">Poketbook Protection</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                        </select>
+                        <td class="text-right">$2,000</td>
+                        <td class="no-border-left text-right">$1,000</td>
+                        <td class="no-border-left text-right">$1,000</td>
+                        <td>
+                          <input type="text" class="form-control small">
+                        </td>
+                        <td class="no-border-left">
+                          <input type="text" class="form-control small">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="row-2">
+                            <label class="custom-control-label" for="row-2">Tire & Rim</label>
+                          </div>
+                        </td>
+                        <td>
+                          <select class="form-control small blue-arrow">
+                            <option value="1">Poketbook Protection</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select class="form-control small blue-arrow">
+                            <option value="1">GST + PST</option>
+                            <option value="2">No Taxes</option>
+                          </select>
+                        </td>
+                        <td class="checkbox-column">
+                        <a href="#" data-toggle="modal" data-target="#warranty-modal"><img src="assets/images/table-grid.svg" alt=""></a>
                       </td>
-                      <td>
-                        <select class="form-control small blue-arrow">
-                          <option value="1">GST + PST</option>
-                          <option value="2">No Taxes</option>
-                        </select>
+                        <td class="text-right">$2,000</td>
+                        <td class="no-border-left text-right">$1,000</td>
+                        <td class="no-border-left text-right">$1,000</td>
+                        <td>
+                          <input type="text" class="form-control small">
+                        </td>
+                        <td class="no-border-left">
+                          <input type="text" class="form-control small">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="row-3">
+                            <label class="custom-control-label" for="row-3">KeyFob</label>
+                          </div>
+                        </td>
+                        <td>
+                          <select class="form-control small blue-arrow">
+                            <option value="1">Poketbook Protection</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select class="form-control small blue-arrow">
+                            <option value="1">GST + PST</option>
+                            <option value="2">No Taxes</option>
+                          </select>
+                        </td>
+                        <td class="checkbox-column">
+                        <a href="#" data-toggle="modal" data-target="#warranty-modal"><img src="assets/images/table-grid.svg" alt=""></a>
                       </td>
-                      <td class="checkbox-column">
-                        <img src="assets/images/table-grid.svg" alt="">
-                      </td>
-                      <td class="text-right">$2,000</td>
-                      <td class="no-border-left text-right">$1,000</td>
-                      <td class="no-border-left text-right">$1,000</td>
-                      <td>
-                        <input type="text" class="form-control small">
-                      </td>
-                      <td class="no-border-left">
-                        <input type="text" class="form-control small">
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="row-4">
-                          <label class="custom-control-label" for="row-4">Warranty</label>
-                        </div>
-                      </td>
-                      <td>
-                        <select class="form-control small blue-arrow">
-                          <option value="1">Poketbook Protection</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                        </select>
-                      </td>
-                      <td>
-                        <select class="form-control small blue-arrow">
-                          <option value="1">GST + PST</option>
-                          <option value="2">No Taxes</option>
-                        </select>
-                      </td>
-                      <td class="checkbox-column">
-                        <img src="assets/images/table-grid.svg" alt="">
-                      </td>
-                      <td class="text-right">$2,000</td>
-                      <td class="no-border-left text-right">$1,000</td>
-                      <td class="no-border-left text-right">$1,000</td>
-                      <td>
-                        <input type="text" class="form-control small">
-                      </td>
-                      <td class="no-border-left">
-                        <input type="text" class="form-control small">
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="row-5">
-                          <label class="custom-control-label" for="row-5">Life Insurance</label>
-                        </div>
-                      </td>
-                      <td>
-                        <select class="form-control small blue-arrow">
-                          <option value="1">Poketbook Protection</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                        </select>
-                      </td>
-                      <td>
-                        <select class="form-control small blue-arrow">
-                          <option value="1">GST + PST</option>
-                          <option value="2">No Taxes</option>
-                        </select>
-                      </td>
-                      <td class="checkbox-column">
-                        <img src="assets/images/table-grid.svg" alt="">
-                      </td>
-                      <td class="text-right">$2,000</td>
-                      <td class="no-border-left text-right">$1,000</td>
-                      <td class="no-border-left text-right">$1,000</td>
-                      <td>
-                        <input type="text" class="form-control small">
-                      </td>
-                      <td class="no-border-left">
-                        <input type="text" class="form-control small">
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="row-6">
-                          <label class="custom-control-label" for="row-6">Walkaway</label>
-                        </div>
-                      </td>
-                      <td>
-                        <select class="form-control small blue-arrow">
-                          <option value="1">Poketbook Protection</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                        </select>
-                      </td>
-                      <td>
-                        <select class="form-control small blue-arrow">
-                          <option value="1">GST + PST</option>
-                          <option value="2">No Taxes</option>
-                        </select>
-                      </td>
-                      <td class="checkbox-column">
-                        <img src="assets/images/table-grid.svg" alt="">
-                      </td>
-                      <td class="text-right">$2,000</td>
-                      <td class="no-border-left text-right">$1,000</td>
-                      <td class="no-border-left text-right">$1,000</td>
-                      <td>
-                        <input type="text" class="form-control small">
-                      </td>
-                      <td class="no-border-left">
-                        <input type="text" class="form-control small">
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="row-7">
-                          <label class="custom-control-label" for="row-7">Chemicals</label>
-                        </div>
-                      </td>
-                      <td>
-                        <select class="form-control small blue-arrow">
-                          <option value="1">Poketbook Protection</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                        </select>
-                      </td>
-                      <td>
-                        <select class="form-control small blue-arrow">
-                          <option value="1">GST + PST</option>
-                          <option value="2">No Taxes</option>
-                        </select>
-                      </td>
-                      <td class="checkbox-column">
-                        <img src="assets/images/table-grid.svg" alt="">
-                      </td>
-                      <td class="text-right">$2,000</td>
-                      <td class="no-border-left text-right">$1,000</td>
-                      <td class="no-border-left text-right">$1,000</td>
-                      <td>
-                        <input type="text" class="form-control small">
-                      </td>
-                      <td class="no-border-left">
-                        <input type="text" class="form-control small">
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="row-8">
-                          <label class="custom-control-label" for="row-8">Gap</label>
-                        </div>
-                      </td>
-                      <td>
-                        <select class="form-control small blue-arrow">
-                          <option value="1">Poketbook Protection</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                        </select>
-                      </td>
-                      <td>
-                        <select class="form-control small blue-arrow">
-                          <option value="1">GST + PST</option>
-                          <option value="2">No Taxes</option>
-                        </select>
-                      </td>
-                      <td class="checkbox-column">
-                        <img src="assets/images/table-grid.svg" alt="">
-                      </td>
-                      <td class="text-right">$2,000</td>
-                      <td class="no-border-left text-right">$1,000</td>
-                      <td class="no-border-left text-right">$1,000</td>
-                      <td>
-                        <input type="text" class="form-control small">
-                      </td>
-                      <td class="no-border-left">
-                        <input type="text" class="form-control small">
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="row-2">
-                          <label class="custom-control-label" for="row-2">Tire & Rim</label>
-                        </div>
-                      </td>
-                      <td>
-                        <select class="form-control small blue-arrow">
-                          <option value="1">Poketbook Protection</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                        </select>
-                      </td>
-                      <td>
-                        <select class="form-control small blue-arrow">
-                          <option value="1">GST + PST</option>
-                          <option value="2">No Taxes</option>
-                        </select>
-                      </td>
-                      <td class="checkbox-column">
-                        <img src="assets/images/table-grid.svg" alt="">
-                      </td>
-                      <td class="text-right">$2,000</td>
-                      <td class="no-border-left text-right">$1,000</td>
-                      <td class="no-border-left text-right">$1,000</td>
-                      <td>
-                        <input type="text" class="form-control small">
-                      </td>
-                      <td class="no-border-left">
-                        <input type="text" class="form-control small">
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="row-3">
-                          <label class="custom-control-label" for="row-3">KeyFob</label>
-                        </div>
-                      </td>
-                      <td>
-                        <select class="form-control small blue-arrow">
-                          <option value="1">Poketbook Protection</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                        </select>
-                      </td>
-                      <td>
-                        <select class="form-control small blue-arrow">
-                          <option value="1">GST + PST</option>
-                          <option value="2">No Taxes</option>
-                        </select>
-                      </td>
-                      <td class="checkbox-column">
-                        <img src="assets/images/table-grid.svg" alt="">
-                      </td>
-                      <td class="text-right">$2,000</td>
-                      <td class="no-border-left text-right">$1,000</td>
-                      <td class="no-border-left text-right">$1,000</td>
-                      <td>
-                        <input type="text" class="form-control small">
-                      </td>
-                      <td class="no-border-left">
-                        <input type="text" class="form-control small">
-                      </td>
-                    </tr>
-                    
-                  </tbody>
-                </table>
+                        <td class="text-right">$2,000</td>
+                        <td class="no-border-left text-right">$1,000</td>
+                        <td class="no-border-left text-right">$1,000</td>
+                        <td>
+                          <input type="text" class="form-control small">
+                        </td>
+                        <td class="no-border-left">
+                          <input type="text" class="form-control small">
+                        </td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
           <div
-            class="tab-pane fade show active"
+            class="tab-pane fade"
             id="worksheet"
             role="tabpanel"
             aria-labelledby="worksheet-tab"
@@ -654,8 +767,8 @@
             <div class="text-right mb-3">
               <button type="button" class="btn btn-primary">Copy</button>
             </div>
-            <div class="d-flex align-items-start custom-scroll fixed-scroll clear-l-padding">
-              <div class="worksheet-slide-panel inactive">
+            <div class="d-flex align-items-start custom-scroll clear-l-padding">
+              <div class="worksheet-slide-panel">
                 <button class="btn btn-icon panel-toggle">
                   <img src="assets/images/side-panel-arrow.svg" alt="">
                 </button>
@@ -1633,42 +1746,6 @@
 
     <div
       class="modal fade"
-      id="video-chat-modal"
-      data-backdrop="false"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="video-call">
-            <div class="users">
-              <figure>
-                <img src="assets/images/user.jpg" alt="" />
-              </figure>
-              <figure>
-                <img src="assets/images/other.jpg" alt="" />
-              </figure>
-            </div>
-            <div class="controls">
-              <button type="button" class="btn dark-green">
-                <i class="icon-videocam"></i>
-              </button>
-              <button type="button" class="btn">
-                <i class="icon-mic"></i>
-              </button>
-              <button type="button" class="btn hang-up" data-dismiss="modal">
-                <i class="icon-call"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal fade"
       id="warranty-modal"
       tabindex="-1"
       role="dialog"
@@ -1785,6 +1862,42 @@
       </div>
     </div>
 
+    <div
+      class="modal fade"
+      id="video-chat-modal"
+      data-backdrop="false"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="video-call">
+            <div class="users">
+              <figure>
+                <img src="assets/images/user.jpg" alt="" />
+              </figure>
+              <figure>
+                <img src="assets/images/other.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="controls">
+              <button type="button" class="btn dark-green">
+                <i class="icon-videocam"></i>
+              </button>
+              <button type="button" class="btn">
+                <i class="icon-mic"></i>
+              </button>
+              <button type="button" class="btn hang-up" data-dismiss="modal">
+                <i class="icon-call"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Javascript Files -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -1809,7 +1922,12 @@
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script>
-      $('#warranty-modal').modal('show')
+      $('#video-chat-modal').on('show.bs.modal', function (e) {
+        $('.video-chat').addClass('op-active');
+      });
+      $('#video-chat-modal').on('hide.bs.modal', function (e) {
+        $('.video-chat').removeClass('op-active');
+      });
     </script>
     <script src="assets/scripts/custom-functions.js"></script>
   </body>

@@ -23,7 +23,7 @@
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Product_Two</title>
+    <title>Product_One</title>
 <meta data-react-helmet="true" name="apple-mobile-web-app-capable" content="yes">
     <meta data-react-helmet="true" name="apple-mobile-web-app-status-bar-style" content="#68CDF0">
     <meta data-react-helmet="true" name="apple-mobile-web-app-title" content="FINX">
@@ -48,13 +48,12 @@
     <div class="global-wrapper op-page">
       <header>
         <div class="container-fluid">
-          <a href="#" class="logo">
-            <img src="assets/images/logo.svg" />
-          </a>
+          <a href="#" class="logo open-sidemenu">
+        <img src="assets/images/logo.svg" alt="FINX"/>
+      </a>
           <div class="spacer"></div>
           <div class="buttons only-one">
             <button type="button" class="btn pointer-icon">
-               
               <span>Pointer</span>
             </button>
             <button
@@ -70,7 +69,7 @@
               <i class="icon-screen"></i>
               <span>Screen</span>
             </button>
-            <button type="button" class="btn red-icon">
+            <button type="button" class="btn red-icon op-active">
               <div class="shiny-icon">
                 <i class="icon-group"></i>
               </div>
@@ -82,7 +81,7 @@
               </div>
               <span>Quote</span>
             </button>
-            <button type="button" class="btn blue-icon op-active">
+            <button type="button" class="btn blue-icon">
               <div class="shiny-icon">
                 <i class="icon-group"></i>
               </div>
@@ -95,8 +94,29 @@
               <span class="sign-sent"></span>
             </button>
           </div>
-        </div>
-      </header>
+        </div>  </header>
+  <div class="sidemenu">
+    <img src="assets/images/logo.svg" alt="">
+    <button type="button" class="btn btn-icon close-menu">
+      <img src="assets/images/close-red.svg" alt="">
+    </button>
+    <nav>
+      <ul>
+        <li>
+          <a href="#" class="active">Home</a>
+        </li>
+        <li>
+          <a href="./Overview.html">Overview</a>
+        </li>
+        <li>
+          <a href="./CS_Profile.html">Profile</a>
+        </li>
+        <li>
+          <a href="#" onClick="toggleFullScreen();">Full Screen</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
       <div class="meta-bar">
         <div>
@@ -336,7 +356,7 @@
                         >
                           <h2 class="title">Product Grids</h2>
                         </div>
-                        <div class="products products-carousel carousel-blue">
+                        <div class="products products-carousel carousel-red">
                           <div class="products__product-item">
                             <div id="tire-rim">
                               <h4>Tire & Rim</h4>
@@ -564,23 +584,23 @@
                         </div>
                         <div class="card-body bordered">
                           <ul class="bubbles-list only-one">
-                            <li data-color="blue">1</li>
-                            <li data-color="blue">2</li>
-                            <li data-color="blue">3</li>
-                            <li data-color="blue">4</li>
-                            <li data-color="blue">5</li>
-                            <li data-color="blue">6</li>
-                            <li data-color="blue">7</li>
-                            <li class="disabled" data-color="blue">8</li>
-                            <li class="disabled" data-color="blue">9</li>
-                            <li class="disabled" data-color="blue">10</li>
-                            <li class="disabled" data-color="blue">11</li>
-                            <li class="disabled" data-color="blue">12</li>
-                            <li class="disabled" data-color="blue">13</li>
-                            <li class="disabled" data-color="blue">14</li>
-                            <li class="disabled" data-color="blue">15</li>
-                            <li class="disabled" data-color="blue">16</li>
-                            <li class="disabled" data-color="blue">17</li>
+                            <li data-color="red">1</li>
+                            <li data-color="red">2</li>
+                            <li data-color="red">3</li>
+                            <li data-color="red">4</li>
+                            <li data-color="red">5</li>
+                            <li data-color="red">6</li>
+                            <li data-color="red">7</li>
+                            <li class="disabled" data-color="red">8</li>
+                            <li class="disabled" data-color="red">9</li>
+                            <li class="disabled" data-color="red">10</li>
+                            <li class="disabled" data-color="red">11</li>
+                            <li class="disabled" data-color="red">12</li>
+                            <li class="disabled" data-color="red">13</li>
+                            <li class="disabled" data-color="red">14</li>
+                            <li class="disabled" data-color="red">15</li>
+                            <li class="disabled" data-color="red">16</li>
+                            <li class="disabled" data-color="red">17</li>
                           </ul>
                         </div>
                       </div>
@@ -590,24 +610,36 @@
                         </div>
                         <div class="card-body bordered">
                           <ul class="bubbles-list">
-                            <li data-color="blue" data-target="warranty">Warranty</li>
-                            <li data-color="blue" data-target="tire-rim">Tire & Rim</li>
-                            <li data-color="blue" data-target="keyfob">KeyFob</li>
-                            <li data-color="blue">Paint Protections</li>
-                            <li data-color="blue">Undercoating</li>
-                            <li data-color="blue" data-target="walkaway">Walkaway Insurance</li>
-                            <li data-color="blue" data-target="gap">Gap Insurance</li>
-                            <li data-color="blue" data-target="life-insurance">Life Insurance</li>
-                            <li data-color="blue" data-target="dis-insurance">
+                            <li data-color="red" data-target="warranty">
+                              Warranty
+                            </li>
+                            <li data-color="red" data-target="tire-rim">
+                              Tire & Rim
+                            </li>
+                            <li data-color="red" data-target="keyfob">
+                              KeyFob
+                            </li>
+                            <li data-color="red">Paint Protections</li>
+                            <li data-color="red">Undercoating</li>
+                            <li data-color="red" data-target="walkaway">
+                              Walkaway Insurance
+                            </li>
+                            <li data-color="red" data-target="gap">
+                              Gap Insurance
+                            </li>
+                            <li data-color="red" data-target="life-insurance">
+                              Life Insurance
+                            </li>
+                            <li data-color="red" data-target="dis-insurance">
                               Disability Insurance
                             </li>
-                            <li data-color="blue" data-target="critical-illness">
+                            <li data-color="red" data-target="critical-illness">
                               Critical Illness Ins.
                             </li>
                           </ul>
                         </div>
                       </div>
-                      <div class="card blue-card">
+                      <div class="card red-card">
                         <div class="card-header text-center text-nowrap px-0">
                           Rates & Payment
                         </div>
