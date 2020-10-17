@@ -1039,8 +1039,9 @@ dl {
     }
     &.full-height-block {
         display: flex;
-        height: 100%;
+        // height: 100%;
         flex-direction: column;
+        align-items: stretch;
         .block-content {
             flex: 1;
         }

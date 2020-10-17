@@ -669,9 +669,14 @@ var elem = document.documentElement;
       document.documentElement.msRequestFullscreen();
     } else if (document.documentElement.mozRequestFullScreen) {
       document.documentElement.mozRequestFullScreen();
-    } else if (document.documentElement.webkitRequestFullscreen) {
+    } 
+    else if (document.documentElement.webkitRequestFullscreen) {
       document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
     }
+    // else if (document.documentElement.webkitRequestFullScreen) {
+    //   return document.documentElement.webkitRequestFullScreen();
+    // }
+
   } else {
     if (document.exitFullscreen) {
       document.exitFullscreen();

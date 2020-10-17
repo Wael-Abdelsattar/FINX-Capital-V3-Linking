@@ -1631,11 +1631,13 @@ dl.no-border > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .block.full-height-block .block-content {
