@@ -382,6 +382,7 @@ button:focus {
 }
 .table-bordered .form-control:focus {
   border-color: #80bdff;
+  border-width: 2px;
 }
 
 .btn-light:not(:disabled):not(.disabled).active,
