@@ -18,40 +18,7 @@ $(document).ready(function() {
     });
 
     // Giving Rest of Screen Height to Tab Content
-    function setContentHeight() {
-        const windowHeight = $(window).outerHeight();
-        const header = $('header').outerHeight();
-        const metaBar = $('.meta-bar').outerHeight();
-        const navBar = $('.nav-tabs').outerHeight();
-        const navBarDark = $('.nav-tabs.dark').outerHeight();
-        const buttons = $('.global-wrapper>.buttons').outerHeight();
-        const verify = $('.verify.wrapper.light-grey.auto-height.p-4').outerHeight();
-        $('.global-wrapper>.container-fluid>.tab-content').css({
-            minHeight: windowHeight - (header + metaBar + 84),
-        });
-        // For CD_Brochures
-        $('.global-wrapper>.container-fluid>.tab-content.full-height-max .custom-scroll').css({
-            maxHeight: windowHeight - (header + metaBar + navBar + navBarDark + 101),
-        });
-        // For SA_Brochures
-        $('.global-wrapper>.container-fluid .tab-content.full-height-max .custom-scroll').css({
-            maxHeight: windowHeight - (header + metaBar + navBar + navBarDark + buttons + 39),
-        });
-        $('.global-wrapper>.container-fluid>.tab-content>#worksheet>.fixed-scroll').css({
-            maxHeight: windowHeight - (header + metaBar + navBar + 46 + 15 + 48),
-        });
-        $('.global-wrapper>.container-fluid>.tab-content>.full-height').css({
-            height: windowHeight - (header + metaBar + 84),
-        });
-        // For SA_Tab1_None_Copy_4
-        $('.global-wrapper .grid-blocks.two.full-height-max').css({
-            minHeight: windowHeight - (header + metaBar + verify + 83),
-        });
-    }
-    setContentHeight();
-    $(window).resize(function() {
-        setContentHeight();
-    });
+    
 
     // Change Cursor
     $('.pointer-icon').on('click', function() {
@@ -654,6 +621,52 @@ $(document).ready(function() {
         $("p.payment-value").empty();
         baudrate = $(this).text();
         $("p.payment-value").append(baudrate);
+    });
+
+    function setContentHeight() {
+        const windowHeight = $(window).outerHeight();
+        const header = $('header').outerHeight();
+        const metaBar = $('.meta-bar').outerHeight();
+        const navBar = $('.nav-tabs').outerHeight();
+        const navBarDark = $('.nav-tabs.dark').outerHeight();
+        const buttons = $('.global-wrapper>.buttons').outerHeight();
+        const verify = $('.verify.wrapper.light-grey.auto-height.p-4').outerHeight();
+        const leftDiv = $('.global-wrapper.op-page .col-xl-6:first-child .wrapper.light-grey').outerHeight();
+        // const leftDiv = "757px";
+        $('.global-wrapper>.container-fluid>.tab-content').css({
+            minHeight: windowHeight - (header + metaBar + 84),
+        });
+        // For CD_Brochures
+        $('.global-wrapper>.container-fluid>.tab-content.full-height-max .custom-scroll').css({
+            maxHeight: windowHeight - (header + metaBar + navBar + navBarDark + 101),
+            minHeight: "685px",
+        });
+        // For SA_Brochures
+        $('.global-wrapper>.container-fluid .tab-content.full-height-max .custom-scroll').css({
+            maxHeight: windowHeight - (header + metaBar + navBar + navBarDark + buttons + 39),
+            minHeight: "685px",
+        });
+        $('.grid-blocks.three.gap-15.products-full-height').css({
+            // height: windowHeight - (header + metaBar + navBar + 30 + 5 + navBarDark + 30 + 30 + 6),
+            // minHeight: windowHeight - (header + metaBar + navBar + 30 + 5 + navBarDark + 30 + 30 + 6),
+            // minHeight: windowHeight - (header + metaBar + 84),
+            height: leftDiv - (30 + 30),
+            minHeight: leftDiv - (30 + 30),
+        });
+        $('.global-wrapper>.container-fluid>.tab-content>#worksheet>.fixed-scroll').css({
+            maxHeight: windowHeight - (header + metaBar + navBar + 46 + 15 + 48),
+        });
+        $('.global-wrapper>.container-fluid>.tab-content>.full-height').css({
+            height: windowHeight - (header + metaBar + 84),
+        });
+        // For SA_Tab1_None_Copy_4
+        $('.global-wrapper .grid-blocks.two.full-height-max').css({
+            minHeight: windowHeight - (header + metaBar + verify + 83),
+        });
+    }
+    setContentHeight();
+    $(window).resize(function() {
+        setContentHeight();
     });
 
 });

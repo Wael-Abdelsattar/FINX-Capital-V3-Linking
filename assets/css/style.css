@@ -1059,6 +1059,10 @@ dl.no-border > div {
   margin-bottom: 0;
 }
 
+.card .card-body.h-100 {
+  max-height: 100%;
+}
+
 .three .card .card-body {
   padding: 7px;
 }

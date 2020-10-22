@@ -554,6 +554,9 @@ dl {
                 margin-bottom: 0;
             }
         }
+        &.h-100 {
+            max-height: 100%;
+        }
     }
     .three & {
         .card-body {
@@ -723,6 +726,13 @@ dl {
     }
 }
 
+// .products-full-height {
+//     .card {
+//         .card-body {
+//             max-height: 100% !important;
+//         }
+//     }
+// }
 .pointer-icon {
     color: rgba($color: #f04e31, $alpha: 0.5) !important;
     &:before {
