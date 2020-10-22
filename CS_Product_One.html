@@ -24,7 +24,7 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css?v=1.0" />
     <title>Product_One</title>
 <meta data-react-helmet="true" name="apple-mobile-web-app-capable" content="yes">
     <meta data-react-helmet="true" name="apple-mobile-web-app-status-bar-style" content="#68CDF0">
@@ -142,8 +142,7 @@
               <a
                 class="nav-link"
                 id="application-tab"
-                data-toggle="tab"
-                href="#application"
+                href="CS_Application-1.html"
                 role="tab"
                 aria-controls="application"
                 aria-selected="true"
@@ -154,8 +153,7 @@
               <a
                 class="nav-link"
                 id="vehicle-info-tab"
-                data-toggle="tab"
-                href="#vehicle-info"
+                href="CS_Vehicle-Info.html"
                 role="tab"
                 aria-controls="vehicle-info"
                 aria-selected="false"
@@ -167,7 +165,7 @@
                 class="nav-link active"
                 id="customer-display-tab"
                 data-toggle="tab"
-                href="#customer-display"
+                href="Op_All.html"
                 role="tab"
                 aria-controls="customer-display"
                 aria-selected="false"
@@ -178,8 +176,7 @@
               <a
                 class="nav-link"
                 id="disclosure-tab"
-                data-toggle="tab"
-                href="#disclosure"
+                href="CD_Disclosure.html"
                 role="tab"
                 aria-controls="disclosure"
                 aria-selected="false"
@@ -190,8 +187,7 @@
               <a
                 class="nav-link"
                 id="decision-tab"
-                data-toggle="tab"
-                href="#decision"
+                href="CD_Decisions.html"
                 role="tab"
                 aria-controls="decision"
                 aria-selected="false"
@@ -202,8 +198,7 @@
               <a
                 class="nav-link"
                 id="lenders-note-tab"
-                data-toggle="tab"
-                href="#lenders-note"
+                href="CD_Lenders_Note.html"
                 role="tab"
                 aria-controls="lenders-note"
                 aria-selected="false"
@@ -214,8 +209,7 @@
               <a
                 class="nav-link"
                 id="documents-tab"
-                data-toggle="tab"
-                href="#documents"
+                href="CD_Documents.html"
                 role="tab"
                 aria-controls="documents"
                 aria-selected="false"
@@ -227,7 +221,7 @@
           <button type="button" class="btn btn-danger mb-1">Cancel</button>
           <button type="button" class="btn btn-primary ml-1 mb-1">Save</button>
         </div>
-        <div class="tab-content" id="myTabContent">
+        <div class="tab-content full-height-max pr2" id="myTabContent">
           <div
             class="tab-pane fade"
             id="application"
@@ -352,7 +346,7 @@
                       </div>
                     </div>
                     <div class="col-md-12 mt-3">
-                      <div class="wrapper">
+                      <div class="wrapper" style="max-height: 200px;">
                         <div
                           class="section-title d-flex align-items-center mb-3 center"
                         >
@@ -428,8 +422,7 @@
                     <a
                       class="nav-link active"
                       id="products-tab"
-                      data-toggle="tab"
-                      href="#products"
+                      href="CS_Product_One.html"
                       role="tab"
                       aria-controls="products"
                       aria-selected="false"
@@ -440,8 +433,7 @@
                     <a
                       class="nav-link"
                       id="brochures-tab"
-                      data-toggle="tab"
-                      href="#brochures"
+                      href="CD_Brochures_One.html"
                       role="tab"
                       aria-controls="brochures"
                       aria-selected="false"
@@ -579,12 +571,12 @@
                     role="tabpanel"
                     aria-labelledby="products-tab"
                   >
-                    <div class="grid-blocks three gap-15">
+                    <div class="grid-blocks three gap-15 products-full-height">
                       <div class="card grey-card">
                         <div class="card-header text-center text-nowrap px-0">
                           Buy Down Points
                         </div>
-                        <div class="card-body bordered">
+                        <div class="card-body bordered h-100">
                           <ul class="bubbles-list only-one">
                             <li data-color="red">1</li>
                             <li data-color="red">2</li>
@@ -610,7 +602,7 @@
                         <div class="card-header text-center text-nowrap px-0">
                           Products
                         </div>
-                        <div class="card-body bordered">
+                        <div class="card-body bordered h-100">
                           <ul class="bubbles-list">
                             <li data-color="red" data-target="warranty">
                               Warranty
@@ -645,7 +637,7 @@
                         <div class="card-header text-center text-nowrap px-0">
                           Rates & Payment
                         </div>
-                        <div class="card-body bordered">
+                        <div class="card-body bordered h-100">
                           <ul class="bubbles-list not-clickable">
                             <li class="filled">
                               <span>6.79 %</span>
@@ -787,6 +779,6 @@
       });
     </script>
     <script src="assets/scripts/gauge-chart.js"></script>
-    <script src="assets/scripts/custom-functions.js"></script>
+    <script src="assets/scripts/custom-functions.js?v=2.4"></script>
   </body>
 </html>
