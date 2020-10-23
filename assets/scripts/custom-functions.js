@@ -632,7 +632,8 @@ $(document).ready(function() {
         const buttons = $('.global-wrapper>.buttons').outerHeight();
         const verify = $('.verify.wrapper.light-grey.auto-height.p-4').outerHeight();
         const leftDiv = $('.global-wrapper.op-page .col-xl-6:first-child .wrapper.light-grey').outerHeight();
-        // const leftDiv = "757px";
+        const leftDivSA = $('.global-wrapper.dark-page .col-xl-6:first-child .wrapper.light-grey').outerHeight();
+        const leftDivFixed = "683px";
         $('.global-wrapper>.container-fluid>.tab-content').css({
             minHeight: windowHeight - (header + metaBar + 84),
         });
@@ -652,6 +653,11 @@ $(document).ready(function() {
             // minHeight: windowHeight - (header + metaBar + 84),
             height: leftDiv - (30 + 30),
             minHeight: leftDiv - (30 + 30),
+        });
+        $('.grid-blocks.three.gap-15.products-full-height').css({
+            height: leftDivFixed,
+            minHeight: leftDivFixed,
+            // minHeight: windowHeight - (header + metaBar + buttons) + 9,
         });
         $('.global-wrapper>.container-fluid>.tab-content>#worksheet>.fixed-scroll').css({
             maxHeight: windowHeight - (header + metaBar + navBar + 46 + 15 + 48),
