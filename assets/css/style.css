@@ -5034,7 +5034,9 @@ header .buttons {
   }
 }
 
-.payment-options .btn {
+.payment-options .btn,
+.amortization-options .btn,
+.term-options .btn {
   background: none;
   border: 0;
   color: white;
@@ -5043,7 +5045,9 @@ header .buttons {
   min-width: auto;
 }
 
-.payment-options .btn:after {
+.payment-options .btn:after,
+.amortization-options .btn:after,
+.term-options .btn:after {
   content: '\e903';
   font-family: "icomoon" !important;
   -webkit-font-smoothing: antialiased;
@@ -5056,7 +5060,15 @@ header .buttons {
   display: block;
 }
 
-.payment-options .btn:hover, .payment-options .btn:focus, .payment-options .btn:active:hover, .payment-options .btn.btn-danger:active {
+.payment-options .btn:hover, .payment-options .btn:focus, .payment-options .btn:active:hover, .payment-options .btn.btn-danger:active,
+.amortization-options .btn:hover,
+.amortization-options .btn:focus,
+.amortization-options .btn:active:hover,
+.amortization-options .btn.btn-danger:active,
+.term-options .btn:hover,
+.term-options .btn:focus,
+.term-options .btn:active:hover,
+.term-options .btn.btn-danger:active {
   outline: 0 !important;
   background: none !important;
   border: 0 !important;
@@ -5064,12 +5076,16 @@ header .buttons {
           box-shadow: none !important;
 }
 
-.payment-options.actions {
+.payment-options.actions,
+.amortization-options.actions,
+.term-options.actions {
   line-height: 18px;
   text-align: left;
 }
 
-.payment-options.actions > .btn {
+.payment-options.actions > .btn,
+.amortization-options.actions > .btn,
+.term-options.actions > .btn {
   color: #fff;
   font-size: 14px;
   font-weight: 400;
@@ -5079,31 +5095,21 @@ header .buttons {
   height: 20px;
 }
 
-.payment-options.actions > .btn::after {
+.payment-options.actions > .btn::after,
+.amortization-options.actions > .btn::after,
+.term-options.actions > .btn::after {
   display: block;
 }
 
-.payment-options.actions .dropdown-menu-center {
+.payment-options.actions .dropdown-menu-center,
+.amortization-options.actions .dropdown-menu-center,
+.term-options.actions .dropdown-menu-center {
   left: 39% !important;
 }
 
-svg g.highcharts-axis-labels.highcharts-yaxis-labels text:nth-of-type(1) {
-  fill: #E02020 !important;
-}
-
-svg g.highcharts-axis-labels.highcharts-yaxis-labels text:nth-of-type(2) {
-  fill: #FA6400 !important;
-}
-
-svg g.highcharts-axis-labels.highcharts-yaxis-labels text:nth-of-type(3) {
-  fill: #F7B500 !important;
-}
-
-svg g.highcharts-axis-labels.highcharts-yaxis-labels text:nth-of-type(4) {
-  fill: #9AFF2F !important;
-}
-
-svg g.highcharts-axis-labels.highcharts-yaxis-labels text:nth-of-type(5) {
-  fill: #478A00 !important;
+.payment-value,
+.amortization-value,
+.term-value {
+  margin-bottom: 9px !important;
 }
 /*# sourceMappingURL=style.css.map */

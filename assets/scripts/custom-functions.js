@@ -622,6 +622,16 @@ $(document).ready(function() {
         baudrate = $(this).text();
         $("p.payment-value").append(baudrate);
     });
+    $(".amortization-options a.dropdown-item").click(function() {
+        $("p.amortization-value").empty();
+        baudrate = $(this).text();
+        $("p.amortization-value").append(baudrate);
+    });
+    $(".term-options a.dropdown-item").click(function() {
+        $("p.term-value").empty();
+        baudrate = $(this).text();
+        $("p.term-value").append(baudrate);
+    });
 
     function setContentHeight() {
         const windowHeight = $(window).outerHeight();

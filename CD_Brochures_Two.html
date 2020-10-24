@@ -277,7 +277,7 @@
                       </div>
                     </div>
                     <div class="col-md-5">
-                      <div class="wrapper">
+                      <div class="wrapper px-0">
                         <div
                           class="section-title d-flex align-items-center mb-4 center"
                         >
@@ -295,12 +295,30 @@
                         </div>
                         <div class="row mb-2">
                           <div class="col-md-2">
-                            <p class="m-0 small-text">Term</p>
-                            <p class="mt-2 mb-2 small-text">0</p>
+                            <div class="dropdown select-dropdown actions term-options">
+                              <button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownMenuButton">Term
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-center" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">0</a>
+                                <a class="dropdown-item" href="#">1</a>
+                                <a class="dropdown-item" href="#">2</a>
+                                <a class="dropdown-item" href="#">3</a>
+                              </div>
+                            </div>
+                            <p class="mt-2 mb-0 small-text text-nowrap term-value">0</p>
                           </div>
                           <div class="col-md-4">
-                            <p class="m-0 small-text">Amortization</p>
-                            <p class="mt-2 mb-0 small-text">0</p>
+                            <div class="dropdown select-dropdown actions amortization-options">
+                              <button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownMenuButton">Amortization
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-center" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">0</a>
+                                <a class="dropdown-item" href="#">1</a>
+                                <a class="dropdown-item" href="#">2</a>
+                                <a class="dropdown-item" href="#">3</a>
+                              </div>
+                            </div>
+                            <p class="mt-2 mb-0 small-text text-nowrap amortization-value">0</p>
                           </div>
                           <div class="col-md-6">
                             <div class="dropdown select-dropdown actions payment-options">
@@ -411,8 +429,7 @@
                     <a
                       class="nav-link"
                       id="options-tab"
-                      data-toggle="tab"
-                      href="#options"
+                      href="Op_Two.html"
                       role="tab"
                       aria-controls="options"
                       aria-selected="true"
@@ -423,7 +440,7 @@
                     <a
                       class="nav-link"
                       id="products-tab"
-                      href="CS_Product_One.html"
+                      href="CS_Product_Two.html"
                       role="tab"
                       aria-controls="products"
                       aria-selected="false"
@@ -434,7 +451,7 @@
                     <a
                       class="nav-link active"
                       id="brochures-tab"
-                      href="CD_Brochures_One.html"
+                      href="CD_Brochures_Two.html"
                       role="tab"
                       aria-controls="brochures"
                       aria-selected="false"
@@ -600,7 +617,7 @@
                   >
                     <div class="grid-blocks three gap-15 gap-y-30 pr-2 custom-scroll">
                       
-                          <div class="card grey-card">
+                          <div class="card blue-card">
                             <a href="#"
                             data-toggle="modal"
                             data-target="#brochure-modal">
@@ -613,7 +630,7 @@
                                                       <img src="assets/images/brochure.jpg" alt="" height="62" />
                         </div>
                       </a></div>
-                      <div class="card grey-card">
+                      <div class="card blue-card">
                       <a href="#"
                             data-toggle="modal"
                             data-target="#brochure-modal">
@@ -628,7 +645,7 @@
                         </div>
                       </a>
 </div>
-                      <div class="card grey-card">
+                      <div class="card blue-card">
                     <a href="#"
                           data-toggle="modal"
                           data-target="#brochure-modal">
