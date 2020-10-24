@@ -558,7 +558,7 @@
                     aria-labelledby="options-tab"
                   >
                     <div class="grid-blocks gap-15 auto-fit">
-                      <div class="red-data data-highlight grid-blocks gap-15 one" data-color="red">
+                      <div class="red-data data-highlight grid-blocks gap-15 one" data-color="red" onclick="LinkCustomerDisplayTabs(this);">
                         <div class="card grey-card">
                           <div class="card-header text-center">
                             Option One
@@ -598,7 +598,7 @@
                           <div class="card-body lender-notes"></div>
                         </div>
                       </div>
-                      <div class="dark-grey-data data-highlight grid-blocks gap-15 one" data-color="dark-grey">
+                      <div class="dark-grey-data data-highlight grid-blocks gap-15 one" data-color="dark-grey" onclick="LinkCustomerDisplayTabs(this);">
                         <div class="card grey-card">
                           <div class="card-header text-center">
                             Quote
@@ -638,7 +638,7 @@
                           <div class="card-body lender-notes"></div>
                         </div>
                       </div>
-                      <div class="blue-data data-highlight grid-blocks gap-15 one" data-color="blue">
+                      <div class="blue-data data-highlight grid-blocks gap-15 one" data-color="blue" onclick="LinkCustomerDisplayTabs(this);">
                         <div class="card grey-card">
                           <div class="card-header text-center">
                             Option Two
@@ -808,6 +808,28 @@
       $("#video-chat-modal").on("hide.bs.modal", function (e) {
         $(".video-chat").removeClass("op-active");
       });
+
+
+        function LinkCustomerDisplayTabs(sender) {
+            var color = $(sender).attr('data-color');
+            var selectedClass = $(sender).find('.card').attr('class');
+            if (color == 'red') {
+                //$('#options-tab').attr('href', '');
+                $('#products-tab').attr('href', 'CS_Product_One.html');
+                $('#brochures-tab').attr('href', 'CD_Brochures_One.html');
+            }
+            else if (color == 'blue') {
+                //$('#options-tab').attr('href', '');
+                $('#products-tab').attr('href', 'CS_Product_Two.html');
+                $('#brochures-tab').attr('href', 'CD_Brochures_Two.html');
+            }
+            else if (color == 'dark-grey') {
+                //$('#options-tab').attr('href', '');
+                $('#products-tab').attr('href', 'CS_Product_Qu.html');
+                $('#brochures-tab').attr('href', 'CD_Brochures_Qu.html');
+            }
+        }
+
     </script>
     <script src="assets/scripts/gauge-chart.js"></script>
     <script src="assets/scripts/custom-functions.js"></script>
