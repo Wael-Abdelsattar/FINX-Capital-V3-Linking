@@ -24,6 +24,13 @@ Highcharts.chart(
             text: '',
         },
 
+        // plotOptions: {
+        //     column: {
+        //         colorByPoint: true
+        //     }
+        // },
+        // colors: ['#E02020','#FA6400','#F7B500','#9AFF2F','#478A00'],
+
         pane: {
             startAngle: -150,
             endAngle: 150,
@@ -85,6 +92,7 @@ Highcharts.chart(
                 {
                     from: 300,
                     to: 692,
+                    // color: colors[0],
                     color: '#E02020',
                     className: 'poor',
                     borederWidth: 2, // green
@@ -107,6 +115,7 @@ Highcharts.chart(
                 {
                     from: 693,
                     to: 742,
+                    // color: colors[1],
                     color: '#FA6400',
                     className: 'fair',
                     borederWidth: 2 // yellow
@@ -114,6 +123,7 @@ Highcharts.chart(
                 {
                     from: 743,
                     to: 789,
+                    // color: colors[2],
                     color: '#F7B500',
                     className: 'good',
                     borederWidth: 2 // red
@@ -121,6 +131,7 @@ Highcharts.chart(
                 {
                     from: 790,
                     to: 832,
+                    // color: colors[3],
                     color: '#9AFF2F',
                     className: 'v-good',
                     borederWidth: 2 // red
@@ -128,6 +139,7 @@ Highcharts.chart(
                 {
                     from: 833,
                     to: 900,
+                    // color: colors[4],
                     color: '#478A00',
                     className: 'excellent',
                     borederWidth: 2 // red
@@ -135,20 +147,29 @@ Highcharts.chart(
             ],
         },
 
+        
+
         series: [{
             name: 'Speed',
-            data: [745],
+            data: [750],
+            color: '#F7B500',
+            // colorByPoint: true,
+            className: 'good',
             tooltip: {
                 valueSuffix: ' km',
             },
             dataLabels: {
                 borderWidth: 0,
-                useHTML: true
+                useHTML: true,
+                // colorByPoint: true,
+                className: 'good',
+                color: '#F7B500',
             },
             pivot: {
                 radius: 15,
                 backgroundColor: '#505050'
-            }
+            },
+            
         }, ],
     }
 );

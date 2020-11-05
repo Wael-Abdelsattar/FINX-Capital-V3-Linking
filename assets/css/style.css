@@ -871,12 +871,7 @@ dl.no-border > div {
 .highcharts-data-labels.highcharts-gauge-series span {
   position: static !important;
   font-size: 30px !important;
-  color: white !important;
   font-family: "Helvetica" !important;
-}
-
-.highcharts-data-labels.highcharts-gauge-series span.green {
-  color: #83ff00 !important;
 }
 
 .slick-slider.carousel-red .products__product-item > div:after {
@@ -1731,6 +1726,7 @@ dl.no-border > div {
   position: absolute;
   top: 4px;
   right: 4px;
+  z-index: 999 !important;
 }
 
 .files .file .icon {
@@ -1744,6 +1740,7 @@ dl.no-border > div {
       -ms-flex-pack: center;
           justify-content: center;
   width: 40px;
+  min-width: 40px;
   height: 40px;
   border-radius: 4px;
   border: 1px solid #f04e31;
@@ -3366,7 +3363,7 @@ select.form-control.blue-arrow {
 }
 
 .green {
-  color: #83ff00 !important;
+  color: #83ff00;
 }
 
 .red {
@@ -3571,6 +3568,14 @@ select.form-control.blue-arrow {
 
 .w-150 {
   width: 150px !important;
+}
+
+.w-180 {
+  width: 180px !important;
+}
+
+.w-190 {
+  width: 190px !important;
 }
 
 .no-border-left {

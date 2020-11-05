@@ -219,7 +219,7 @@ table {
 }
 
 .custom-control {
-  padding-left: 25px;
+  /* padding-left: 25px; */
   font-size: 14px;
 }
 
@@ -712,6 +712,11 @@ input.form-control[type=text][disabled] {
 .w-180 .bootstrap-select,
 .w-180 .bootstrap-select .btn {
   width: 180px !important;
+}
+.w-190,
+.w-190 .bootstrap-select,
+.w-190 .bootstrap-select .btn {
+  width: 190px !important;
 }
 
 .score input {

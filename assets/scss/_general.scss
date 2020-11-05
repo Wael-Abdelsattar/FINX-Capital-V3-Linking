@@ -354,11 +354,11 @@ dl {
     span {
         position: static !important;
         font-size: 30px !important;
-        color: white !important;
+        // color: white !important;
         font-family: $bodyFont;
-        &.green {
-            color: $green !important;
-        }
+        // &.green {
+        //     color: $green !important;
+        // }
     }
 }
 
@@ -1123,12 +1123,14 @@ dl {
             position: absolute;
             top: 4px;
             right: 4px;
+            z-index: 999 !important;
         }
         .icon {
             display: flex;
             align-items: center;
             justify-content: center;
             width: 40px;
+            min-width: 40px;
             height: 40px;
             border-radius: 4px;
             border: 1px solid $lightRed;

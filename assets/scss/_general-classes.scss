@@ -33,7 +33,7 @@
 }
 
 .green {
-  color: $green !important;
+  color: $green;
 }
 
 .red {
@@ -202,6 +202,12 @@
 
 .w-150 {
   width: 150px !important;
+}
+.w-180 {
+  width: 180px !important;
+}
+.w-190 {
+  width: 190px !important;
 }
 .no-border-left {
   border-left: 0 !important;

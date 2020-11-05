@@ -151,8 +151,11 @@ $(document).ready(function() {
         const uploadNewFile = `
     <div>
       <input type="text" class="form-control small-height mb-1">
-      <input type="file" id="new-file-${id}" onchange="console.log(${id})" hidden>
+      <input type="file" id="new-file-${id}" onchange="DocumentFileUploadChange(this)" hidden>
       <label class="file" for="new-file-${id}">
+<button type="button" class="btn btn-icon bg-danger remove-file">
+                            <i class="icon-delete"></i>
+                          </button>
         <span class="icon">
           <img src="assets/images/add-more.svg" alt="">
         </span>
@@ -161,6 +164,45 @@ $(document).ready(function() {
     </div>
   `;
         $('.files').append(uploadNewFile).clone(true);
+
+
+
+
+        $('.remove-file').off("click").on("click", function (e) {
+            //$(e.target).closest('.fileDivClass').remove();
+            debugger;
+            var fileDiv = $(e.target).closest('.file');
+
+            if (fileDiv.length > 0 && (fileDiv.parent().attr('class') == 'fileDivClass' || fileDiv.parent().attr('class') == 'fileParent')) {//ordiginal fixed row
+
+                if (fileDiv.find('h5').text() == 'Upload') {
+                    return;
+                }
+
+                var removeFileButton = fileDiv.find('button');//$(e.target).parent();
+                fileDiv.find('.icon').remove();
+                fileDiv.find('h5').remove();
+                fileDiv.append('<input type="file" id="new-file-' + (++filesNewCounter) + '" onchange="DocumentFileUploadChange(this)" hidden=""><label class="file" for="new-file-' + filesNewCounter + '"><span class="icon"><img src="assets/images/add-more.svg" alt=""></span><h5>Upload</h5></label >');
+                fileDiv.attr('class', 'fileParent');
+                fileDiv.find('.file').append(removeFileButton);
+            }
+            else {
+
+                var inputFileName = fileDiv.parent().find('input[type=text]');
+                //if (inputFileName.val().trim() == '') {
+                if (fileDiv.find('h5').text() == 'Upload') {
+                    fileDiv.parent().remove();
+                }
+                else {
+                    inputFileName.val('');
+                    fileDiv.find('h5').text('Upload');
+                }
+            }
+            //alert(111);
+        });
+
+
+
     });
 
     // $('#brochures .card .card-header').each(function () {
@@ -650,11 +692,13 @@ $(document).ready(function() {
         // For CD_Brochures
         $('.global-wrapper>.container-fluid>.tab-content.full-height-max .custom-scroll').css({
             maxHeight: windowHeight - (header + metaBar + navBar + navBarDark + 101),
+            height: "685px",
             minHeight: "685px",
         });
         // For SA_Brochures
         $('.global-wrapper>.container-fluid .tab-content.full-height-max .custom-scroll').css({
             maxHeight: windowHeight - (header + metaBar + navBar + navBarDark + buttons + 39),
+            height: "685px",
             minHeight: "685px",
         });
         $('.grid-blocks.three.gap-15.products-full-height').css({
